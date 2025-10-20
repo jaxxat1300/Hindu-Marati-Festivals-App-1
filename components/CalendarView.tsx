@@ -94,16 +94,20 @@ export default function CalendarView() {
 
   return (
     <div className="space-y-6">
-      {/* Calendar Header */}
+      {/* Calendar Header with Indian Charm */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center"
+        className="text-center spiritual-decoration mb-6"
       >
-        <h2 className="text-3xl font-bold text-saffron-800 mb-2">
-          Festival Calendar
-        </h2>
-        <p className="text-saffron-600">
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <span className="text-3xl">📅</span>
+          <h2 className="text-2xl font-bold text-saffron-800 font-marathi">
+            Festival Calendar
+          </h2>
+          <span className="text-3xl">🪔</span>
+        </div>
+        <p className="text-saffron-600 max-w-md mx-auto">
           Discover the rich tapestry of Hindu and Marathi festivals
         </p>
       </motion.div>
@@ -134,20 +138,25 @@ export default function CalendarView() {
       </div>
 
       {/* Calendar Grid */}
-      <Card className="overflow-hidden">
+      <Card className="overflow-hidden festival-card">
         <CardContent className="p-0">
-          <div className="grid grid-cols-7 gap-px bg-gray-200">
+          <div className="grid grid-cols-7 gap-px bg-gradient-to-br from-saffron-50 to-rose-50">
             {/* Day Headers */}
             {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-              <div key={day} className="bg-saffron-100 p-3 text-center text-sm font-medium text-saffron-800">
+              <motion.div 
+                key={day} 
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-gradient-to-b from-saffron-100 to-saffron-200 p-3 text-center text-sm font-medium text-saffron-800"
+              >
                 {day}
-              </div>
+              </motion.div>
             ))}
             
             {/* Calendar Days */}
             {getDaysInMonth(currentDate).map((day, index) => {
               if (!day) {
-                return <div key={index} className="bg-white p-3 min-h-[80px]" />
+                return <div key={index} className="bg-white/50 p-3 min-h-[90px]" />
               }
               
               const dayFestivals = getFestivalsForDay(day)
@@ -159,14 +168,17 @@ export default function CalendarView() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.01 }}
-                  className={`bg-white p-2 min-h-[80px] border-r border-b border-gray-100 ${
-                    isCurrentDay ? 'bg-saffron-50 border-saffron-200' : ''
+                  whileHover={{ scale: 1.02 }}
+                  className={`bg-white/80 p-2 min-h-[90px] border-r border-b border-saffron-100 cursor-pointer transition-all duration-200 ${
+                    isCurrentDay ? 'bg-gradient-to-br from-saffron-50 to-saffron-100 border-saffron-300 shadow-sm' : 'hover:bg-white/90'
                   }`}
+                  onClick={() => dayFestivals.length > 0 && setSelectedFestival(dayFestivals[0])}
                 >
-                  <div className={`text-sm font-medium mb-1 ${
-                    isCurrentDay ? 'text-saffron-800' : 'text-gray-700'
+                  <div className={`text-sm font-medium mb-2 ${
+                    isCurrentDay ? 'text-saffron-800 font-semibold' : 'text-gray-700'
                   }`}>
                     {day}
+                    {isCurrentDay && <span className="ml-1 text-xs">•</span>}
                   </div>
                   
                   <div className="space-y-1">
@@ -174,17 +186,21 @@ export default function CalendarView() {
                       <motion.div
                         key={festival.id}
                         whileHover={{ scale: 1.05 }}
-                        className={`text-xs p-1 rounded cursor-pointer ${getFestivalTypeColor(festival.type)}`}
-                        onClick={() => setSelectedFestival(festival)}
+                        whileTap={{ scale: 0.95 }}
+                        className={`text-xs p-1.5 rounded-lg cursor-pointer transition-all duration-200 ${getFestivalTypeColor(festival.type)} hover:shadow-sm`}
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          setSelectedFestival(festival)
+                        }}
                       >
                         <div className="flex items-center gap-1">
-                          <span>{getFestivalIcon(festival.type)}</span>
-                          <span className="truncate">{festival.name}</span>
+                          <span className="text-sm">{getFestivalIcon(festival.type)}</span>
+                          <span className="truncate font-medium">{festival.name}</span>
                         </div>
                       </motion.div>
                     ))}
                     {dayFestivals.length > 2 && (
-                      <div className="text-xs text-gray-500">
+                      <div className="text-xs text-gray-500 font-medium">
                         +{dayFestivals.length - 2} more
                       </div>
                     )}
@@ -210,23 +226,29 @@ export default function CalendarView() {
             {monthFestivals.map(festival => (
               <motion.div
                 key={festival.id}
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
                 className="cursor-pointer"
                 onClick={() => setSelectedFestival(festival)}
               >
-                <Card className="card-hover">
+                <Card className="festival-card card-hover">
                   <CardContent className="p-4">
                     <div className="flex items-start gap-3">
-                      <div className="text-2xl">{getFestivalIcon(festival.type)}</div>
+                      <motion.div 
+                        className="text-3xl festival-icon"
+                        whileHover={{ rotate: 10, scale: 1.1 }}
+                      >
+                        {getFestivalIcon(festival.type)}
+                      </motion.div>
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <h4 className="font-semibold text-saffron-800">{festival.name}</h4>
-                          <span className={`px-2 py-1 rounded-full text-xs ${getFestivalTypeColor(festival.type)}`}>
+                        <div className="flex items-center gap-2 mb-2">
+                          <h4 className="font-semibold text-saffron-800 text-lg">{festival.name}</h4>
+                          <span className={`px-3 py-1 rounded-full text-xs font-medium ${getFestivalTypeColor(festival.type)}`}>
                             {festival.type}
                           </span>
                         </div>
-                        <p className="text-sm text-gray-600 mb-2">{formatDate(festival.date)}</p>
-                        <p className="text-sm text-gray-700 line-clamp-2">{festival.description}</p>
+                        <p className="text-sm text-saffron-600 mb-2 font-medium">{formatDate(festival.date)}</p>
+                        <p className="text-sm text-gray-700 line-clamp-2 leading-relaxed">{festival.description}</p>
                       </div>
                     </div>
                   </CardContent>
