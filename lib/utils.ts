@@ -50,3 +50,36 @@ export function isUpcoming(date: string): boolean {
 export function getRandomSaiBabaQuote(quotes: any[]) {
   return quotes[Math.floor(Math.random() * quotes.length)]
 }
+
+export function getFestivalsByMonth(year: number, month: string, festivals: any[]) {
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  const monthIndex = monthNames.indexOf(month)
+  
+  return festivals.filter(festival => {
+    const festivalDate = new Date(festival.date)
+    return festivalDate.getFullYear() === year && festivalDate.getMonth() === monthIndex
+  })
+}
+
+export function getUpcomingFestivals(festivals: any[], limit: number = 5) {
+  const today = new Date()
+  return festivals
+    .filter(festival => new Date(festival.date) >= today)
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
+    .slice(0, limit)
+}
+
+export function getFestivalsByType(festivals: any[], type: string) {
+  return festivals.filter(festival => festival.type === type)
+}
+
+export function getCurrentMonthFestivals(festivals: any[]) {
+  const today = new Date()
+  const currentYear = today.getFullYear()
+  const currentMonth = today.getMonth()
+  
+  return festivals.filter(festival => {
+    const festivalDate = new Date(festival.date)
+    return festivalDate.getFullYear() === currentYear && festivalDate.getMonth() === currentMonth
+  })
+}
