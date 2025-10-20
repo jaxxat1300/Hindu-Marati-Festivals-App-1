@@ -66,12 +66,12 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen minimalist-gradient app-container">
-      {/* Header with Indian Charm */}
+    <div className="min-h-screen festival-gradient app-container">
+      {/* Header with Vibrant Indian Charm */}
       <motion.header 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="app-header sticky top-0 z-50 festival-decoration"
+        className="app-header sticky top-0 z-50 festival-decoration festival-lights"
       >
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-center">
@@ -80,15 +80,27 @@ export default function HomePage() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                className="flex items-center justify-center gap-2 mb-1"
+                className="flex items-center justify-center gap-3 mb-2"
               >
-                <span className="text-2xl">🪔</span>
-                <h1 className="text-xl font-bold text-saffron-800 font-marathi">
+                <motion.span 
+                  className="text-3xl festival-icon"
+                  animate={{ rotate: [0, 10, -10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  🪔
+                </motion.span>
+                <h1 className="text-2xl font-bold text-white font-marathi drop-shadow-lg">
                   Hindu Marathi Festivals
                 </h1>
-                <span className="text-2xl">🕉️</span>
+                <motion.span 
+                  className="text-3xl festival-icon"
+                  animate={{ rotate: [0, -10, 10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  🕉️
+                </motion.span>
               </motion.div>
-              <p className="text-sm text-saffron-600">
+              <p className="text-sm text-white/90 drop-shadow">
                 Your Digital Festival Companion
               </p>
             </div>
@@ -165,12 +177,17 @@ export default function HomePage() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1 }}
-        whileHover={{ scale: 1.1 }}
+        whileHover={{ scale: 1.1, rotate: 360 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-20 right-4 w-12 h-12 bg-saffron-500 text-white rounded-full shadow-lg diya-glow flex items-center justify-center z-40"
+        className="fixed bottom-20 right-4 w-14 h-14 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full shadow-xl diya-glow flex items-center justify-center z-40 fireworks"
         onClick={() => setActiveTab('calendar')}
       >
-        <Sparkles className="w-6 h-6" />
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+        >
+          <Sparkles className="w-7 h-7" />
+        </motion.div>
       </motion.button>
     </div>
   )

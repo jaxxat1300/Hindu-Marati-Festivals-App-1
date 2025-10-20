@@ -15,13 +15,23 @@ interface Festival {
   type: string
   date: string
   description: string
-  foods: string[]
+  foods: {
+    traditional: string[]
+    beginnerFriendly: string[]
+  }
+  homeDecor: {
+    essential: string[]
+    beginnerTips: string[]
+  }
   chants: string[]
   how_to_celebrate: string
   image_url: string
   region: string
   significance: string
   rituals: string[]
+  colors: string[]
+  difficulty: string
+  duration: string
 }
 
 export default function CalendarView() {
@@ -94,20 +104,32 @@ export default function CalendarView() {
 
   return (
     <div className="space-y-6">
-      {/* Calendar Header with Indian Charm */}
+      {/* Calendar Header with Vibrant Indian Charm */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="text-center spiritual-decoration mb-6"
       >
-        <div className="flex items-center justify-center gap-3 mb-3">
-          <span className="text-3xl">📅</span>
-          <h2 className="text-2xl font-bold text-saffron-800 font-marathi">
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <motion.span 
+            className="text-4xl"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          >
+            📅
+          </motion.span>
+          <h2 className="text-3xl font-bold text-white font-marathi drop-shadow-lg">
             Festival Calendar
           </h2>
-          <span className="text-3xl">🪔</span>
+          <motion.span 
+            className="text-4xl"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 2, repeat: Infinity, delay: 1 }}
+          >
+            🪔
+          </motion.span>
         </div>
-        <p className="text-saffron-600 max-w-md mx-auto">
+        <p className="text-white/90 max-w-md mx-auto drop-shadow">
           Discover the rich tapestry of Hindu and Marathi festivals
         </p>
       </motion.div>
@@ -297,12 +319,49 @@ export default function CalendarView() {
                 
                 <div>
                   <h4 className="font-semibold text-saffron-800 mb-2">Traditional Foods</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedFestival.foods.map((food, index) => (
-                      <span key={index} className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">
-                        {food}
-                      </span>
-                    ))}
+                  <div className="mb-4">
+                    <h5 className="text-sm font-medium text-saffron-700 mb-2">Traditional:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.foods.traditional.map((food, index) => (
+                        <span key={index} className="px-3 py-1 bg-rose-100 text-rose-800 rounded-full text-sm">
+                          {food}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-medium text-saffron-700 mb-2">Beginner Friendly:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.foods.beginnerFriendly.map((food, index) => (
+                        <span key={index} className="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">
+                          {food}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-saffron-800 mb-2">Home Decorations</h4>
+                  <div className="mb-4">
+                    <h5 className="text-sm font-medium text-saffron-700 mb-2">Essential Items:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.homeDecor.essential.map((item, index) => (
+                        <span key={index} className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-medium text-saffron-700 mb-2">Beginner Tips:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.homeDecor.beginnerTips.map((tip, index) => (
+                        <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                          {tip}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 

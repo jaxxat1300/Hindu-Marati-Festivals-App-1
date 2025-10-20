@@ -15,13 +15,23 @@ interface Festival {
   type: string
   date: string
   description: string
-  foods: string[]
+  foods: {
+    traditional: string[]
+    beginnerFriendly: string[]
+  }
+  homeDecor: {
+    essential: string[]
+    beginnerTips: string[]
+  }
   chants: string[]
   how_to_celebrate: string
   image_url: string
   region: string
   significance: string
   rituals: string[]
+  colors: string[]
+  difficulty: string
+  duration: string
 }
 
 export default function HinduFestivals() {
@@ -98,14 +108,19 @@ export default function HinduFestivals() {
                 </p>
                 
                 <div className="flex flex-wrap gap-1">
-                  {festival.foods.slice(0, 3).map((food, foodIndex) => (
+                  {festival.foods.traditional.slice(0, 2).map((food, foodIndex) => (
                     <span key={foodIndex} className="px-2 py-1 bg-teal-100 text-teal-800 rounded-full text-xs">
                       {food}
                     </span>
                   ))}
-                  {festival.foods.length > 3 && (
-                    <span className="px-2 py-1 bg-teal-100 text-teal-800 rounded-full text-xs">
-                      +{festival.foods.length - 3}
+                  {festival.foods.beginnerFriendly.slice(0, 1).map((food, foodIndex) => (
+                    <span key={foodIndex} className="px-2 py-1 bg-rose-100 text-rose-800 rounded-full text-xs">
+                      {food}
+                    </span>
+                  ))}
+                  {(festival.foods.traditional.length + festival.foods.beginnerFriendly.length) > 3 && (
+                    <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">
+                      +{(festival.foods.traditional.length + festival.foods.beginnerFriendly.length) - 3}
                     </span>
                   )}
                 </div>
@@ -154,12 +169,45 @@ export default function HinduFestivals() {
                 <div>
                   <h4 className="font-semibold text-teal-800 mb-2">Traditional Foods</h4>
                   <div className="grid grid-cols-2 gap-2">
-                    {selectedFestival.foods.map((food, index) => (
+                    {selectedFestival.foods.traditional.map((food, index) => (
                       <div key={index} className="flex items-center gap-2 p-2 bg-teal-50 rounded-lg">
                         <span className="text-teal-600">🍽️</span>
                         <span className="text-sm text-teal-800">{food}</span>
                       </div>
                     ))}
+                  </div>
+                  <h5 className="font-medium text-teal-700 mb-2 mt-4">Beginner Friendly</h5>
+                  <div className="grid grid-cols-2 gap-2">
+                    {selectedFestival.foods.beginnerFriendly.map((food, index) => (
+                      <div key={index} className="flex items-center gap-2 p-2 bg-rose-50 rounded-lg">
+                        <span className="text-rose-600">🌱</span>
+                        <span className="text-sm text-rose-800">{food}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-teal-800 mb-2">Home Decorations</h4>
+                  <div className="mb-4">
+                    <h5 className="text-sm font-medium text-teal-700 mb-2">Essential Items:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.homeDecor.essential.map((item, index) => (
+                        <span key={index} className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-medium text-teal-700 mb-2">Beginner Tips:</h5>
+                    <div className="flex flex-wrap gap-2">
+                      {selectedFestival.homeDecor.beginnerTips.map((tip, index) => (
+                        <span key={index} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                          {tip}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 
