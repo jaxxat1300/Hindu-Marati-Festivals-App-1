@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import LandingPage from '@/components/LandingPage'
 import EnhancedCalendarView from '@/components/EnhancedCalendarView'
 import FavoritesView from '@/components/FavoritesView'
 import HindiFestivals from '@/components/HindiFestivals'
@@ -11,13 +12,21 @@ import Profile from '@/components/Profile'
 import { Calendar, Heart, Home, User, Sparkles } from 'lucide-react'
 
 export default function HomePage() {
+  const [showLanding, setShowLanding] = useState(true)
   const [activeTab, setActiveTab] = useState('calendar')
   const [isLoaded, setIsLoaded] = useState(false)
   const [favorites, setFavorites] = useState<Set<string>>(new Set())
 
   useEffect(() => {
-    setIsLoaded(true)
+    const timer = setTimeout(() => {
+      setIsLoaded(true)
+    }, 100)
+    return () => clearTimeout(timer)
   }, [])
+
+  const handleEnterApp = () => {
+    setShowLanding(false)
+  }
 
   const tabs = [
     { id: 'calendar', label: 'Calendar', icon: Calendar, color: 'text-saffron-600' },
@@ -65,101 +74,9 @@ export default function HomePage() {
     }
   }
 
-  if (!isLoaded) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50 flex items-center justify-center relative overflow-hidden">
-        {/* Animated Mandala Background */}
-        <div className="absolute inset-0 opacity-10">
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-            className="absolute top-1/4 left-1/4 w-64 h-64 border-8 border-orange-500 rounded-full"
-          />
-          <motion.div
-            animate={{ rotate: -360 }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-            className="absolute bottom-1/4 right-1/4 w-48 h-48 border-8 border-red-500 rounded-full"
-          />
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="text-center z-10 relative"
-        >
-          {/* Animated Diya */}
-          <motion.div
-            animate={{ 
-              scale: [1, 1.1, 1],
-              rotate: [0, 5, -5, 0]
-            }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="text-8xl mb-6 filter drop-shadow-2xl"
-          >
-            🪔
-          </motion.div>
-
-          {/* Festival Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent"
-          >
-            India Festival Calendar
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-xl text-orange-700 font-marathi mb-8"
-          >
-            हिंदी और मराठी त्योहार
-          </motion.p>
-
-          {/* Animated Dots */}
-          <div className="flex justify-center gap-3">
-            {[0, 1, 2].map((i) => (
-              <motion.div
-                key={i}
-                animate={{
-                  scale: [1, 1.5, 1],
-                  backgroundColor: ['#ea580c', '#dc2626', '#ea580c']
-                }}
-                transition={{
-                  duration: 1,
-                  repeat: Infinity,
-                  delay: i * 0.2
-                }}
-                className="w-3 h-3 rounded-full bg-orange-600"
-              />
-            ))}
-          </div>
-
-          {/* Decorative Elements */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-            className="mt-8 flex justify-center gap-4 text-3xl"
-          >
-            <motion.span animate={{ rotate: [0, 360] }} transition={{ duration: 3, repeat: Infinity }}>
-              🌺
-            </motion.span>
-            <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }}>
-              ✨
-            </motion.span>
-            <motion.span animate={{ rotate: [0, -360] }} transition={{ duration: 3, repeat: Infinity }}>
-              🌼
-            </motion.span>
-          </motion.div>
-        </motion.div>
-
-        {/* Bottom Decoration */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-orange-100 to-transparent" />
-      </div>
-    )
+  // Show landing page on first visit
+  if (showLanding && isLoaded) {
+    return <LandingPage onEnter={handleEnterApp} />
   }
 
   return (
