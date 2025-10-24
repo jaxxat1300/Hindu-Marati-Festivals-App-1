@@ -267,7 +267,7 @@
           "Decorative plates or trays",
           "Flower petals for decoration"
         ],
-        "difficulty": "Easy",
+    "difficulty": "Easy",
         "timeNeeded": "30 minutes",
         "steps": [
           "Place diyas at entrance, windows, balconies",
@@ -480,7 +480,7 @@
         "nameDevanagari": "मालपुआ",
         "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80",
         "description": "Sweet, fluffy pancakes soaked in sugar syrup",
-        "difficulty": "Medium",
+    "difficulty": "Medium",
         "prepTime": "30 min",
         "cookTime": "30 min",
         "servings": "15 pieces",
@@ -738,7 +738,7 @@
         "nameDevanagari": "तळलेले मोदक",
         "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&q=80",
         "description": "Crispy fried version of the traditional modak",
-        "difficulty": "Medium",
+    "difficulty": "Medium",
         "prepTime": "45 min",
         "cookTime": "30 min",
         "servings": "20 modaks",
@@ -965,7 +965,7 @@
         "nameDevanagari": "आलू जीरा",
         "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
         "description": "Simple cumin-flavored potatoes for fasting",
-        "difficulty": "Easy",
+    "difficulty": "Easy",
         "prepTime": "10 min",
         "cookTime": "20 min",
         "servings": "4 servings",
@@ -1362,7 +1362,7 @@
         "nameDevanagari": "खिचडी",
         "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
         "description": "Rice and lentil comfort food for Sankranti",
-        "difficulty": "Easy",
+    "difficulty": "Easy",
         "prepTime": "15 min",
         "cookTime": "30 min",
         "servings": "6 servings",
@@ -1427,6 +1427,799 @@
       "kites": ["Multiple colorful kites", "Manja", "Charkhi"],
       "puja": ["Flowers", "Incense", "Fruits for offering"],
       "charity": ["Clothes", "Blankets", "Food items for donation"]
+    }
+  },
+  {
+    "id": "raksha-bandhan",
+    "name": "Raksha Bandhan",
+    "nameDevanagari": "रक्षा बंधन",
+    "date": "2025-08-09",
+    "category": "cultural",
+    "color": "#E91E63",
+    "tagline": "Celebrating the sacred bond between siblings",
+    "heroImage": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800&q=80",
+    "overview": {
+      "brief": "Raksha Bandhan celebrates the unique bond between brothers and sisters. Sisters tie a sacred thread (rakhi) on their brothers' wrists, symbolizing protection and love.",
+      "history": "The festival has ancient roots in Indian mythology, with stories of Lord Krishna and Draupadi, and Queen Karnavati and Emperor Humayun. The rakhi represents a sister's prayer for her brother's well-being and the brother's promise to protect his sister.",
+      "significance": "Raksha Bandhan strengthens family bonds and celebrates the special relationship between siblings. It's a day of love, promises, and togetherness that transcends biological relationships.",
+      "duration": "1 day",
+      "region": "Pan-India"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Prepare the Rakhi Thali",
+        "description": "Arrange a decorative plate with rakhis, kumkum, rice, sweets, and a diya. Choose beautiful rakhis that match your brother's personality.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Perform Rakhi Ceremony",
+        "description": "Light the diya, apply tilak on brother's forehead, tie the rakhi on his wrist, and perform aarti. Offer sweets and seek blessings.",
+        "timeNeeded": "15 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 3,
+        "title": "Exchange Gifts",
+        "description": "Brothers give gifts to their sisters as a token of love and promise to protect. This exchange strengthens the sibling bond.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Family Celebration",
+        "description": "Enjoy a special meal together with the family. Share stories, laughter, and create beautiful memories.",
+        "timeNeeded": "2-3 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "coconut-barfi",
+        "name": "Coconut Barfi",
+        "nameDevanagari": "नारळ बर्फी",
+        "image": "https://images.unsplash.com/photo-1599864941169-3a444df28990?w=400&q=80",
+        "description": "Soft, melt-in-mouth coconut fudge perfect for Raksha Bandhan",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "20 min",
+        "servings": "16 pieces",
+        "ingredients": [
+          "2 cups fresh grated coconut",
+          "1 cup sugar",
+          "1/2 cup milk",
+          "2 tbsp ghee",
+          "1/4 tsp cardamom powder",
+          "Chopped pistachios for garnish"
+        ],
+        "instructions": [
+          "Grease a plate or tray with ghee and set aside",
+          "In a pan, combine coconut, sugar, and milk",
+          "Cook on medium heat, stirring continuously",
+          "Add ghee and cardamom when mixture thickens",
+          "Cook until mixture leaves sides of pan",
+          "Spread on greased plate, garnish with pistachios",
+          "Let cool and cut into diamond shapes"
+        ],
+        "tips": [
+          "Use fresh coconut for best results",
+          "Don't overcook or it will become hard",
+          "Can be stored for 3-4 days in the refrigerator"
+        ]
+      },
+      {
+        "id": "kesar-peda",
+        "name": "Kesar Peda",
+        "nameDevanagari": "केसर पेडा",
+        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80",
+        "description": "Saffron-flavored milk fudge, a premium sweet for special occasions",
+        "difficulty": "Medium",
+        "prepTime": "15 min",
+        "cookTime": "30 min",
+        "servings": "20 pedas",
+        "ingredients": [
+          "2 cups milk powder",
+          "1/2 cup condensed milk",
+          "1/4 cup ghee",
+          "Few saffron strands soaked in 2 tbsp milk",
+          "1/4 tsp cardamom powder",
+          "Chopped pistachios for garnish"
+        ],
+        "instructions": [
+          "Heat ghee in a non-stick pan",
+          "Add milk powder and roast for 2 minutes",
+          "Add condensed milk and saffron milk",
+          "Mix well and cook until mixture thickens",
+          "Add cardamom powder and mix",
+          "Remove from heat and let cool slightly",
+          "Shape into small rounds, flatten slightly",
+          "Garnish with pistachio pieces"
+        ],
+        "tips": [
+          "Don't overcook or pedas will become hard",
+          "Shape while mixture is still warm",
+          "Store in airtight container for up to a week"
+        ]
+      },
+      {
+        "id": "mango-shrikhand",
+        "name": "Mango Shrikhand",
+        "nameDevanagari": "आंब्याची श्रीखंड",
+        "image": "https://images.unsplash.com/photo-1623428454614-abaf00244e52?w=400&q=80",
+        "description": "Creamy mango-flavored yogurt dessert, light and refreshing",
+    "difficulty": "Easy",
+        "prepTime": "10 min (+ 4 hrs for yogurt)",
+        "cookTime": "0 min",
+        "servings": "4 servings",
+        "ingredients": [
+          "2 cups thick yogurt (hung overnight)",
+          "1/2 cup mango pulp",
+          "1/2 cup powdered sugar",
+          "1/4 tsp cardamom powder",
+          "Few saffron strands",
+          "Chopped nuts for garnish"
+        ],
+        "instructions": [
+          "Hang yogurt in muslin cloth overnight",
+          "Remove hung yogurt in a bowl",
+          "Add powdered sugar and whisk until smooth",
+          "Add mango pulp and cardamom, mix well",
+          "Add saffron strands",
+          "Refrigerate for 2 hours",
+          "Serve chilled with chopped nuts"
+        ],
+        "tips": [
+          "Use thick, fresh yogurt for best results",
+          "Adjust sugar according to mango sweetness",
+          "Can be made a day ahead"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Rakhi Thali",
+        "title": "Decorative Rakhi Thali",
+        "description": "Create a beautiful traditional plate for the rakhi ceremony with all essential items arranged aesthetically.",
+        "materials": [
+          "Steel or brass thali (plate)",
+          "Kumkum (vermillion)",
+          "Rice grains",
+          "Sweets",
+          "Small diya",
+          "Rakhis",
+          "Decorative cloth or paper",
+          "Flowers for decoration"
+        ],
+        "difficulty": "Easy",
+        "timeNeeded": "30 minutes",
+        "steps": [
+          "Cover the thali with decorative cloth or colorful paper",
+          "Place a small diya in the center",
+          "Arrange rakhis on one side",
+          "Place kumkum and rice in small bowls",
+          "Add sweets on the plate",
+          "Decorate with fresh flowers",
+          "Add any other decorative elements"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1597433336446-57c5c2ceb42c?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Use ready-made decorative thalis from the market",
+          "Keep it simple but elegant",
+          "Prepare the thali the night before"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "rakhis": ["Beautiful rakhis (as needed)", "Designer rakhis for special brothers"],
+      "puja": ["Kumkum", "Rice", "Diya", "Match box", "Flowers"],
+      "sweets": ["Mixed sweets", "Chocolates", "Dry fruits"],
+      "gifts": ["Gift items for brother/sister", "Gift wrapping materials"],
+      "decoration": ["Decorative thali", "Flowers", "Decorative cloth"]
+    }
+  },
+  {
+    "id": "janmashtami",
+    "name": "Janmashtami",
+    "nameDevanagari": "जन्माष्टमी",
+    "date": "2025-08-16",
+    "category": "religious",
+    "color": "#2196F3",
+    "tagline": "Celebrating the birth of Lord Krishna with devotion and joy",
+    "heroImage": "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=800&q=80",
+    "overview": {
+      "brief": "Janmashtami celebrates the birth of Lord Krishna, the eighth avatar of Lord Vishnu. The festival is marked by fasting, prayers, and midnight celebrations.",
+      "history": "Lord Krishna was born in Mathura over 5,000 years ago to Devaki and Vasudeva. His birth came at midnight in a prison cell, where he was born to destroy the evil King Kansa and protect dharma.",
+      "significance": "Krishna represents divine love, playfulness, and the victory of good over evil. The festival teaches us about devotion, righteousness, and the importance of spiritual values.",
+      "duration": "1-2 days",
+      "region": "Pan-India (especially North India)"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Decorate Krishna's Cradle",
+        "description": "Create a beautiful jhula (swing) or cradle for baby Krishna with flowers, cloth, and decorative items. Place a small Krishna idol in it.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 2,
+        "title": "Fast Throughout the Day",
+        "description": "Observe a full or partial fast, consuming only fruits, milk, and light foods. The fast is broken at midnight after Krishna's birth.",
+        "timeNeeded": "All day",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 3,
+        "title": "Midnight Celebration",
+        "description": "Perform special puja at midnight, the time of Krishna's birth. Sing bhajans, offer makhan (butter), and celebrate with family.",
+        "timeNeeded": "1-2 hours",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Dahi Handi Celebration",
+        "description": "Form a human pyramid to break a pot of curd hung high up, recreating Krishna's childhood butter-stealing adventures.",
+        "timeNeeded": "1-2 hours",
+        "difficulty": "Hard"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "makhan-mishri",
+        "name": "Makhan Mishri",
+        "nameDevanagari": "माखन मिश्री",
+        "image": "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400&q=80",
+        "description": "Fresh butter with rock sugar, Krishna's favorite treat",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "0 min",
+        "servings": "4 servings",
+        "ingredients": [
+          "1 cup fresh white butter",
+          "1/4 cup powdered mishri (rock sugar)",
+          "Few drops of rose water",
+          "Saffron strands for garnish"
+        ],
+        "instructions": [
+          "Take fresh, soft butter in a bowl",
+          "Whip lightly with a spoon",
+          "Add powdered mishri and mix gently",
+          "Add a few drops of rose water",
+          "Shape into small balls or serve as is",
+          "Garnish with saffron strands",
+          "Offer to Krishna during puja"
+        ],
+        "tips": [
+          "Use fresh, unsalted butter",
+          "Keep refrigerated until serving",
+          "Make fresh on the day of festival"
+        ]
+      },
+      {
+        "id": "panjiri",
+        "name": "Panjiri",
+        "nameDevanagari": "पंजीरी",
+        "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&q=80",
+        "description": "Nutritious whole wheat flour sweet with dry fruits and ghee",
+    "difficulty": "Medium",
+        "prepTime": "10 min",
+        "cookTime": "30 min",
+        "servings": "10 servings",
+        "ingredients": [
+          "2 cups whole wheat flour",
+          "1 cup ghee",
+          "1 cup powdered sugar",
+          "1/2 cup chopped almonds",
+          "1/2 cup chopped cashews",
+          "2 tbsp melon seeds",
+          "1 tsp cardamom powder"
+        ],
+        "instructions": [
+          "Heat ghee in a heavy-bottomed pan",
+          "Add wheat flour and roast on low heat",
+          "Stir continuously until golden and aromatic",
+          "Remove from heat and cool slightly",
+          "Add powdered sugar and cardamom",
+          "Mix in all dry fruits and seeds",
+          "Store in airtight container",
+          "Serve as prasad"
+        ],
+        "tips": [
+          "Roast flour on low heat to prevent burning",
+          "Can be stored for 2-3 weeks",
+          "Adjust sugar to taste"
+        ]
+      },
+      {
+        "id": "makhana-kheer",
+        "name": "Makhana Kheer",
+        "nameDevanagari": "मखाना खीर",
+        "image": "https://images.unsplash.com/photo-1589217157232-464b505b197f?w=400&q=80",
+        "description": "Creamy fox nut pudding, perfect for fasting",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "30 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "2 cups makhana (fox nuts)",
+          "1 liter full-fat milk",
+          "1/2 cup sugar",
+          "1/4 tsp cardamom powder",
+          "Few saffron strands",
+          "2 tbsp chopped pistachios",
+          "2 tbsp ghee"
+        ],
+        "instructions": [
+          "Roast makhana in ghee until crisp",
+          "Crush half of them coarsely",
+          "Boil milk in a heavy pot",
+          "Add whole and crushed makhana",
+          "Simmer for 15-20 minutes",
+          "Add sugar and cardamom",
+          "Add saffron and cook for 5 more minutes",
+          "Garnish with pistachios and serve"
+        ],
+        "tips": [
+          "Can be served warm or cold",
+          "Add condensed milk for richer taste",
+          "Perfect for fasting as it's filling"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Krishna Jhula",
+        "title": "Baby Krishna's Swing",
+        "description": "Create a beautiful decorated swing for baby Krishna idol, representing his playful childhood in Vrindavan.",
+        "materials": [
+          "Small wooden or metal swing frame",
+          "Baby Krishna idol",
+          "Fresh flowers (marigolds, roses)",
+          "Decorative cloth",
+          "Peacock feathers",
+          "Bells",
+          "Fairy lights",
+          "Silk cushion or cloth"
+        ],
+        "difficulty": "Medium",
+        "timeNeeded": "2 hours",
+        "steps": [
+          "Set up the swing frame on a stable platform",
+          "Cover swing seat with silk cloth",
+          "Place soft cushion on the seat",
+          "Position baby Krishna idol on the swing",
+          "Decorate frame with flowers and peacock feathers",
+          "Hang bells from the swing",
+          "Add fairy lights around the setup",
+          "Place offerings of makhan and sweets nearby"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1583921505728-48f9353d1501?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Buy a ready-made jhula from the market",
+          "Use artificial flowers if fresh ones are not available",
+          "Keep it simple but colorful"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Baby Krishna idol", "Flowers", "Peacock feathers", "Incense", "Diya", "Camphor"],
+      "food": ["Milk", "Butter", "Mishri", "Dry fruits", "Wheat flour", "Makhana"],
+      "decoration": ["Swing/Jhula", "Decorative cloth", "Fairy lights", "Bells"],
+      "fasting": ["Fruits", "Milk products", "Sabudana", "Kuttu flour"]
+    }
+  },
+  {
+    "id": "ram-navami",
+    "name": "Ram Navami",
+    "nameDevanagari": "राम नवमी",
+    "date": "2025-04-06",
+    "category": "religious",
+    "color": "#FF5722",
+    "tagline": "Celebrating the birth of Lord Rama, the ideal king and avatar",
+    "heroImage": "https://images.unsplash.com/photo-1580495277611-fea67ea7a1e6?w=800&q=80",
+    "overview": {
+      "brief": "Ram Navami celebrates the birth of Lord Rama, the seventh avatar of Vishnu and the hero of the epic Ramayana. It marks the victory of dharma and righteousness.",
+      "history": "Lord Rama was born in Ayodhya to King Dasharatha and Queen Kausalya. His life story, chronicled in the Ramayana, represents the triumph of good over evil and the importance of upholding dharma.",
+      "significance": "Ram Navami symbolizes the victory of truth, righteousness, and devotion. Lord Rama's life teaches us about duty, honor, and unwavering commitment to dharma despite all challenges.",
+      "duration": "9 days (culminates on 9th day)",
+      "region": "Pan-India"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Morning Puja and Bhajans",
+        "description": "Begin the day with a special puja for Lord Rama. Sing bhajans and read from the Ramayana. Offer flowers and sweets to the deity.",
+        "timeNeeded": "1-2 hours",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Ramayana Reading",
+        "description": "Read or listen to passages from the Ramayana, especially chapters about Rama's birth. Many temples organize special Ramayana recitations.",
+        "timeNeeded": "2-3 hours",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 3,
+        "title": "Prepare Traditional Prasad",
+        "description": "Cook special dishes that are favorites of Lord Rama. Offer them during puja and distribute as prasad to family and community.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 4,
+        "title": "Visit Temple and Participate in Processions",
+        "description": "Visit Ram temples to participate in special celebrations. Many places organize processions with Rama's chariot (Ratha Yatra).",
+        "timeNeeded": "3-4 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "panakam",
+        "name": "Panakam",
+        "nameDevanagari": "पानकम",
+        "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?w=400&q=80",
+        "description": "Sweet jaggery drink with black pepper, a traditional Ram Navami offering",
+    "difficulty": "Easy",
+        "prepTime": "5 min",
+        "cookTime": "10 min",
+        "servings": "6 glasses",
+        "ingredients": [
+          "1 cup jaggery (grated)",
+          "4 cups water",
+          "1/2 tsp black pepper powder",
+          "1/2 tsp dry ginger powder",
+          "1/4 tsp cardamom powder",
+          "Few tulsi leaves"
+        ],
+        "instructions": [
+          "Boil water and add grated jaggery",
+          "Stir until jaggery dissolves completely",
+          "Add black pepper powder",
+          "Add dry ginger and cardamom powder",
+          "Mix well and strain",
+          "Cool to room temperature",
+          "Add tulsi leaves before serving",
+          "Serve as prasad"
+        ],
+        "tips": [
+          "Can be served at room temperature or chilled",
+          "Adjust jaggery for desired sweetness",
+          "Very refreshing during hot weather"
+        ]
+      },
+      {
+        "id": "kosambari",
+        "name": "Kosambari",
+        "nameDevanagari": "कोसंबरी",
+        "image": "https://images.unsplash.com/photo-1589621316382-008455b857cd?w=400&q=80",
+        "description": "Fresh moong dal salad with cucumber and coconut",
+        "difficulty": "Easy",
+        "prepTime": "3 hours (soaking)",
+        "cookTime": "10 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "1 cup split moong dal (soaked 3 hours)",
+          "1 cucumber (finely chopped)",
+          "2 tbsp grated coconut",
+          "2 green chilies (finely chopped)",
+          "1 tbsp lemon juice",
+          "Salt to taste",
+          "2 tsp oil",
+          "1 tsp mustard seeds",
+          "Few curry leaves",
+          "Coriander leaves for garnish"
+        ],
+        "instructions": [
+          "Drain soaked moong dal completely",
+          "Mix dal with chopped cucumber",
+          "Add grated coconut and green chilies",
+          "Season with salt and lemon juice",
+          "Heat oil, add mustard seeds",
+          "Add curry leaves when seeds splutter",
+          "Pour tempering over salad",
+          "Garnish with coriander and serve"
+        ],
+        "tips": [
+          "Moong dal should be crunchy, not mushy",
+          "Can add pomegranate seeds for extra flavor",
+          "Best served fresh"
+        ]
+      },
+      {
+        "id": "vadapappu",
+        "name": "Vadapappu",
+        "nameDevanagari": "वडपप्पु",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Soaked lentils mixed with spices, a traditional prasad offering",
+        "difficulty": "Easy",
+        "prepTime": "4 hours (soaking)",
+        "cookTime": "15 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "1 cup chana dal (soaked 4 hours)",
+          "2-3 green chilies",
+          "1 inch ginger",
+          "2 tbsp grated coconut",
+          "Salt to taste",
+          "2 tsp oil",
+          "1 tsp mustard seeds",
+          "1 tsp urad dal",
+          "Few curry leaves",
+          "2 tbsp coriander leaves"
+        ],
+        "instructions": [
+          "Drain soaked chana dal",
+          "Coarsely grind dal with chilies and ginger",
+          "Add grated coconut and salt",
+          "Heat oil, add mustard seeds and urad dal",
+          "Add curry leaves when seeds splutter",
+          "Pour tempering over dal mixture",
+          "Mix well and garnish with coriander",
+          "Serve as prasad"
+        ],
+        "tips": [
+          "Don't grind dal too fine",
+          "Can be made spicier with more chilies",
+          "Soaking time is important for right texture"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Rama Shrine",
+        "title": "Home Altar for Lord Rama",
+        "description": "Create a beautiful altar dedicated to Lord Rama with traditional decorations and offerings.",
+        "materials": [
+          "Lord Rama idol or picture",
+          "Fresh flowers (especially yellow)",
+          "Banana leaves",
+          "Mango leaves",
+          "Rangoli colors",
+          "Diyas and oil",
+          "Incense sticks",
+          "Decorative cloth",
+          "Fruits for offering"
+        ],
+        "difficulty": "Easy",
+        "timeNeeded": "1 hour",
+        "steps": [
+          "Clean the puja area thoroughly",
+          "Place Rama idol/picture at the center",
+          "Decorate with fresh flower garlands",
+          "Create rangoli at the base",
+          "Hang mango leaf torans at entrance",
+          "Place banana leaves as offering plates",
+          "Arrange diyas around the altar",
+          "Light incense and perform aarti"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Use ready-made flower garlands",
+          "Simple rangoli designs work best",
+          "Focus on cleanliness and devotion"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Lord Rama idol/picture", "Yellow flowers", "Mango leaves", "Banana leaves", "Incense", "Diyas", "Camphor"],
+      "prasad": ["Jaggery", "Moong dal", "Chana dal", "Cucumber", "Coconut", "Black pepper", "Dry ginger"],
+      "decoration": ["Rangoli colors", "Fresh flowers", "Decorative cloth"],
+      "charity": ["Clothes", "Food items", "Books (especially Ramayana) for donation"]
+    }
+  },
+  {
+    "id": "mahashivratri",
+    "name": "Maha Shivratri",
+    "nameDevanagari": "महाशिवरात्री",
+    "date": "2025-02-26",
+    "category": "religious",
+    "color": "#9C27B0",
+    "tagline": "The great night of Lord Shiva - awakening and enlightenment",
+    "heroImage": "https://images.unsplash.com/photo-1624926724677-d0a5e9d81b85?w=800&q=80",
+    "overview": {
+      "brief": "Maha Shivratri is the great night dedicated to Lord Shiva. Devotees fast, meditate, and perform special pujas to seek blessings from the destroyer and transformer in the Hindu trinity.",
+      "history": "According to legend, this is the night when Lord Shiva performed the cosmic dance of creation, preservation, and destruction. It's also believed to be the night of Shiva and Parvati's marriage.",
+      "significance": "Shivratri represents the convergence of Shiva and Shakti (energy). It's a night of spiritual awakening, meditation, and seeking liberation from the cycle of birth and death.",
+      "duration": "1 night and next day",
+      "region": "Pan-India and Nepal"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Morning Preparation and Fast",
+        "description": "Begin with a morning bath and clean your home. Start the fast, consuming only fruits, milk, and water. Prepare for the night vigil.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Abhishekam (Ritual Bath)",
+        "description": "Perform abhishekam to Shiva Linga with milk, honey, yogurt, ghee, and water. Each offering has spiritual significance.",
+        "timeNeeded": "1 hour",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 3,
+        "title": "Night Vigil and Meditation",
+        "description": "Stay awake all night in devotion. Chant 'Om Namah Shivaya', meditate, and read Shiva Purana. Visit temple for special darshan.",
+        "timeNeeded": "All night",
+        "difficulty": "Hard"
+      },
+      {
+        "step": 4,
+        "title": "Morning Puja and Fast Breaking",
+        "description": "Perform final puja in the morning, offer bilva leaves, and break fast with sattvic food after sunrise.",
+        "timeNeeded": "1-2 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "thandai",
+        "name": "Thandai",
+        "nameDevanagari": "ठंडाई",
+        "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&q=80",
+        "description": "Cooling spiced milk drink, traditional for Shivratri fasting",
+        "difficulty": "Easy",
+        "prepTime": "20 min",
+        "cookTime": "10 min",
+        "servings": "6 glasses",
+        "ingredients": [
+          "4 cups cold milk",
+          "1/4 cup almonds (soaked)",
+          "2 tbsp cashews",
+          "2 tbsp melon seeds",
+          "1 tbsp fennel seeds",
+          "1 tbsp poppy seeds",
+          "10-12 black peppercorns",
+          "4-5 green cardamoms",
+          "Few saffron strands",
+          "1/2 cup sugar",
+          "Rose petals for garnish"
+        ],
+        "instructions": [
+          "Soak almonds, cashews, and seeds for 2 hours",
+          "Grind all nuts and spices with little milk",
+          "Strain through fine cloth to get smooth paste",
+          "Mix paste with cold milk",
+          "Add sugar and saffron",
+          "Stir well and chill",
+          "Serve garnished with rose petals and nuts"
+        ],
+        "tips": [
+          "Straining is important for smooth texture",
+          "Can be made a day ahead",
+          "Adjust sugar to taste"
+        ]
+      },
+      {
+        "id": "fruit-chaat",
+        "name": "Fruit Chaat",
+        "nameDevanagari": "फळांचा चाट",
+        "image": "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400&q=80",
+        "description": "Spiced fruit salad perfect for fasting",
+        "difficulty": "Easy",
+        "prepTime": "15 min",
+        "cookTime": "0 min",
+        "servings": "4 servings",
+        "ingredients": [
+          "2 apples (chopped)",
+          "2 bananas (sliced)",
+          "1 cup pomegranate seeds",
+          "1 cup grapes",
+          "1 orange (segments)",
+          "2 tbsp lemon juice",
+          "1 tsp chaat masala",
+          "1 tsp black salt",
+          "1 tsp roasted cumin powder",
+          "Fresh mint leaves"
+        ],
+        "instructions": [
+          "Chop all fruits into bite-sized pieces",
+          "Mix all fruits in a large bowl",
+          "Add lemon juice to prevent browning",
+          "Sprinkle chaat masala, black salt, and cumin",
+          "Toss gently to coat evenly",
+          "Garnish with mint leaves",
+          "Serve immediately"
+        ],
+        "tips": [
+          "Use seasonal fruits for best taste",
+          "Add fruits just before serving",
+          "Can skip spices for simple fruit salad"
+        ]
+      },
+      {
+        "id": "sabudana-vada",
+        "name": "Sabudana Vada",
+        "nameDevanagari": "साबूदाणा वडा",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Crispy tapioca pearl fritters, perfect for breaking fast",
+    "difficulty": "Medium",
+        "prepTime": "6 hours (soaking)",
+        "cookTime": "30 min",
+        "servings": "15 vadas",
+        "ingredients": [
+          "2 cups sabudana (tapioca pearls)",
+          "3 boiled potatoes (mashed)",
+          "1/2 cup roasted peanuts (coarsely ground)",
+          "2-3 green chilies (chopped)",
+          "Rock salt (sendha namak) to taste",
+          "1 tsp cumin seeds",
+          "Coriander leaves (chopped)",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Soak sabudana for 4-5 hours, drain well",
+          "Mix sabudana with mashed potatoes",
+          "Add peanuts, chilies, salt, cumin",
+          "Add coriander leaves and mix",
+          "Shape into small flat patties",
+          "Heat oil for deep frying",
+          "Fry vadas until golden and crispy",
+          "Serve hot with yogurt or chutney"
+        ],
+        "tips": [
+          "Sabudana should be soaked properly, not mushy",
+          "Test one vada before frying all",
+          "Drain excess water from sabudana"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Shiva Linga Setup",
+        "title": "Sacred Shiva Linga Altar",
+        "description": "Create a devotional setup for Shiva Linga with all traditional offerings and decorations for abhishekam.",
+        "materials": [
+          "Shiva Linga",
+          "Copper or brass kalash (pot)",
+          "Bilva (bael) leaves",
+          "White flowers",
+          "Rudraksha garland",
+          "Milk, honey, yogurt for abhishekam",
+          "Diyas and oil",
+          "Incense sticks",
+          "Sacred thread (janeu)",
+          "White cloth"
+        ],
+        "difficulty": "Medium",
+        "timeNeeded": "1-2 hours",
+        "steps": [
+          "Place Shiva Linga on a clean platform",
+          "Cover platform with white cloth",
+          "Fill kalash with water, place mango leaves on top",
+          "Arrange offerings: milk, honey, yogurt, ghee",
+          "Place bilva leaves and white flowers nearby",
+          "Light diyas on all four sides",
+          "Hang rudraksha garland",
+          "Light incense and begin abhishekam"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1583912267550-a5de2ef80091?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Keep everything white/light colored",
+          "Bilva leaves are essential for Shiva puja",
+          "Maintain cleanliness and purity"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Shiva Linga", "Bilva leaves", "White flowers", "Rudraksha", "Milk", "Honey", "Yogurt", "Ghee", "Diyas", "Incense"],
+      "fasting": ["Fruits", "Sabudana", "Potatoes", "Peanuts", "Rock salt", "Milk"],
+      "abhishekam": ["Milk (2 liters)", "Honey", "Yogurt", "Ghee", "Sugar", "Water"],
+      "decoration": ["White cloth", "Copper kalash", "Mango leaves"]
     }
   }
 ]

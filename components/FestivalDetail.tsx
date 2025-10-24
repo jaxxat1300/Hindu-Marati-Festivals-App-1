@@ -218,7 +218,7 @@ export default function FestivalDetail({ festival, onClose, isFavorite = false, 
           </div>
 
           {/* Tab Content */}
-          <div className="p-6 max-h-[60vh] overflow-y-auto">
+          <div className="p-6 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 400px)' }}>
             <AnimatePresence mode="wait">
               {/* Overview Tab */}
               {activeTab === 'overview' && (
