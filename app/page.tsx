@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import CalendarView from '@/components/CalendarView'
+import EnhancedCalendarView from '@/components/EnhancedCalendarView'
+import FavoritesView from '@/components/FavoritesView'
 import MarathiFestivals from '@/components/MarathiFestivals'
 import HinduFestivals from '@/components/HinduFestivals'
 import Profile from '@/components/Profile'
@@ -11,6 +12,7 @@ import { Calendar, Heart, Home, User, Sparkles } from 'lucide-react'
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState('calendar')
   const [isLoaded, setIsLoaded] = useState(false)
+  const [favorites, setFavorites] = useState<Set<string>>(new Set())
 
   useEffect(() => {
     setIsLoaded(true)
@@ -18,23 +20,33 @@ export default function HomePage() {
 
   const tabs = [
     { id: 'calendar', label: 'Calendar', icon: Calendar, color: 'text-saffron-600' },
-    { id: 'marathi', label: 'Marathi', icon: Heart, color: 'text-rose-600' },
-    { id: 'hindu', label: 'Hindu', icon: Home, color: 'text-teal-600' },
+    { id: 'favorites', label: 'Favorites', icon: Heart, color: 'text-rose-600' },
+    { id: 'marathi', label: 'Marathi', icon: Home, color: 'text-teal-600' },
     { id: 'profile', label: 'Profile', icon: User, color: 'text-gold-600' },
   ]
+
+  const toggleFavorite = (festivalId: string) => {
+    const newFavorites = new Set(favorites)
+    if (newFavorites.has(festivalId)) {
+      newFavorites.delete(festivalId)
+    } else {
+      newFavorites.add(festivalId)
+    }
+    setFavorites(newFavorites)
+  }
 
   const renderContent = () => {
     switch (activeTab) {
       case 'calendar':
-        return <CalendarView />
+        return <EnhancedCalendarView />
+      case 'favorites':
+        return <FavoritesView favorites={favorites} onToggleFavorite={toggleFavorite} />
       case 'marathi':
         return <MarathiFestivals />
-      case 'hindu':
-        return <HinduFestivals />
       case 'profile':
         return <Profile />
       default:
-        return <CalendarView />
+        return <EnhancedCalendarView />
     }
   }
 
