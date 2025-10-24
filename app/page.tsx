@@ -62,55 +62,155 @@ export default function HomePage() {
 
   if (!isLoaded) {
     return (
-      <div className="min-h-screen minimalist-gradient flex items-center justify-center">
+      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50 flex items-center justify-center relative overflow-hidden">
+        {/* Animated Mandala Background */}
+        <div className="absolute inset-0 opacity-10">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+            className="absolute top-1/4 left-1/4 w-64 h-64 border-8 border-orange-500 rounded-full"
+          />
+          <motion.div
+            animate={{ rotate: -360 }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+            className="absolute bottom-1/4 right-1/4 w-48 h-48 border-8 border-red-500 rounded-full"
+          />
+        </div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-center"
+          className="text-center z-10 relative"
         >
-          <div className="text-4xl mb-4">🪔</div>
-          <div className="text-xl font-semibold text-saffron-800 font-marathi">
-            Loading Festival App...
+          {/* Animated Diya */}
+          <motion.div
+            animate={{ 
+              scale: [1, 1.1, 1],
+              rotate: [0, 5, -5, 0]
+            }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-8xl mb-6 filter drop-shadow-2xl"
+          >
+            🪔
+          </motion.div>
+
+          {/* Festival Name */}
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent"
+          >
+            Hindu Cultural Society
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-xl text-orange-700 font-marathi mb-8"
+          >
+            त्योहारांचे दर्शन
+          </motion.p>
+
+          {/* Animated Dots */}
+          <div className="flex justify-center gap-3">
+            {[0, 1, 2].map((i) => (
+              <motion.div
+                key={i}
+                animate={{
+                  scale: [1, 1.5, 1],
+                  backgroundColor: ['#ea580c', '#dc2626', '#ea580c']
+                }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  delay: i * 0.2
+                }}
+                className="w-3 h-3 rounded-full bg-orange-600"
+              />
+            ))}
           </div>
+
+          {/* Decorative Elements */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.7 }}
+            className="mt-8 flex justify-center gap-4 text-3xl"
+          >
+            <motion.span animate={{ rotate: [0, 360] }} transition={{ duration: 3, repeat: Infinity }}>
+              🌺
+            </motion.span>
+            <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }}>
+              ✨
+            </motion.span>
+            <motion.span animate={{ rotate: [0, -360] }} transition={{ duration: 3, repeat: Infinity }}>
+              🌼
+            </motion.span>
+          </motion.div>
         </motion.div>
+
+        {/* Bottom Decoration */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-orange-100 to-transparent" />
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50 app-container">
-      {/* Modern Clean Header */}
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50 app-container relative">
+      {/* Decorative Pattern Overlay */}
+      <div className="fixed inset-0 opacity-5 pointer-events-none" style={{
+        backgroundImage: `radial-gradient(circle at 20% 50%, transparent 20%, rgba(234, 88, 12, 0.3) 21%, transparent 22%),
+                         radial-gradient(circle at 80% 80%, transparent 20%, rgba(220, 38, 38, 0.3) 21%, transparent 22%)`
+      }} />
+
+      {/* Festive Header */}
       <motion.header 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-sm"
+        className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b-4 border-orange-200 shadow-lg"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="flex items-center gap-3"
+              className="flex items-center gap-4"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-xl">🪔</span>
-              </div>
+              <motion.div 
+                animate={{ rotate: [0, 5, -5, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="w-14 h-14 bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-xl"
+              >
+                <span className="text-2xl">🪔</span>
+              </motion.div>
               <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
                   Hindu Cultural Society
                 </h1>
-                <p className="text-xs text-gray-500">Festival Calendar</p>
+                <p className="text-sm text-orange-700 font-marathi">त्योहार कॅलेंडर • Festival Calendar</p>
               </div>
             </motion.div>
             
-            <div className="hidden md:flex items-center gap-2 text-sm">
-              <span className="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-pink-50 text-purple-700 rounded-lg font-medium">
+            <div className="hidden md:flex items-center gap-3">
+              <motion.span
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold shadow-lg"
+              >
                 🎓 College Club
-              </span>
+              </motion.span>
+              <div className="flex gap-2 text-2xl">
+                <motion.span animate={{ rotate: [0, 360] }} transition={{ duration: 4, repeat: Infinity }}>🌺</motion.span>
+                <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }}>✨</motion.span>
+              </div>
             </div>
           </div>
         </div>
+        {/* Decorative Border */}
+        <div className="h-1 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400" />
       </motion.header>
 
       {/* Main Content */}
@@ -129,14 +229,15 @@ export default function HomePage() {
         </AnimatePresence>
       </main>
 
-      {/* Modern Bottom Navigation */}
+      {/* Festive Bottom Navigation */}
       <motion.nav 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-2xl"
+        className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-t-4 border-orange-200 shadow-2xl"
       >
+        <div className="h-1 bg-gradient-to-r from-orange-400 via-red-400 to-pink-400" />
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="flex justify-around items-center h-16">
+          <div className="flex justify-around items-center h-20">
             {tabs.map((tab) => {
               const Icon = tab.icon
               const isActive = activeTab === tab.id
@@ -152,20 +253,29 @@ export default function HomePage() {
                   {isActive && (
                     <motion.div
                       layoutId="activeTab"
-                      className="absolute inset-0 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl"
+                      className="absolute inset-0 bg-gradient-to-r from-orange-100 via-yellow-100 to-red-100 rounded-2xl border-2 border-orange-300"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
                   <div className="relative z-10">
                     <Icon className={`w-6 h-6 mb-1 transition-colors ${
-                      isActive ? 'text-purple-600' : 'text-gray-400'
+                      isActive ? 'text-orange-600' : 'text-gray-400'
                     }`} />
-                    <span className={`text-xs font-medium ${
-                      isActive ? 'text-purple-600' : 'text-gray-500'
+                    <span className={`text-xs font-semibold ${
+                      isActive ? 'text-orange-700' : 'text-gray-500'
                     }`}>
                       {tab.label}
                     </span>
                   </div>
+                  {isActive && (
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      className="absolute -top-1 right-2 text-xs"
+                    >
+                      ✨
+                    </motion.div>
+                  )}
                 </motion.button>
               )
             })}

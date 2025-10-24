@@ -140,19 +140,19 @@ export default function EnhancedCalendarView() {
 
   const getCategoryBadgeColor = (category: string) => {
     switch (category) {
-      case 'religious': return 'bg-purple-50 text-purple-700 border-purple-200'
-      case 'cultural': return 'bg-blue-50 text-blue-700 border-blue-200'
-      case 'harvest': return 'bg-amber-50 text-amber-700 border-amber-200'
-      default: return 'bg-gray-50 text-gray-700 border-gray-200'
+      case 'religious': return 'bg-orange-50 text-orange-700 border-orange-300'
+      case 'cultural': return 'bg-yellow-50 text-yellow-700 border-yellow-300'
+      case 'harvest': return 'bg-amber-50 text-amber-700 border-amber-300'
+      default: return 'bg-red-50 text-red-700 border-red-300'
     }
   }
 
   const getCategoryGradient = (category: string) => {
     switch (category) {
-      case 'religious': return 'from-purple-500 to-pink-500'
-      case 'cultural': return 'from-blue-500 to-cyan-500'
-      case 'harvest': return 'from-amber-500 to-orange-500'
-      default: return 'from-gray-500 to-gray-700'
+      case 'religious': return 'from-orange-500 via-red-500 to-pink-500'
+      case 'cultural': return 'from-yellow-500 to-orange-500'
+      case 'harvest': return 'from-amber-500 to-orange-600'
+      default: return 'from-orange-500 to-red-500'
     }
   }
 
@@ -166,18 +166,18 @@ export default function EnhancedCalendarView() {
       >
         {/* Search Input */}
         <div className="relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-orange-400" />
           <input
             type="text"
-            placeholder="Search festivals by name..."
+            placeholder="Search festivals by name... 🔍"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-12 pr-12 py-4 bg-white border-2 border-gray-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
+            className="w-full pl-12 pr-12 py-4 bg-white border-2 border-orange-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all shadow-lg hover:shadow-xl"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -202,43 +202,43 @@ export default function EnhancedCalendarView() {
         </div>
       </motion.div>
 
-      {/* Modern Month Navigation */}
-      <Card className="border-2 border-gray-100 shadow-sm">
-        <CardContent className="p-5">
+      {/* Festive Month Navigation */}
+      <Card className="border-2 border-orange-200 shadow-lg bg-gradient-to-r from-orange-50 to-yellow-50">
+        <CardContent className="p-6">
           <div className="flex items-center justify-between">
             <button
               onClick={() => navigateMonth('prev')}
-              className="p-2 hover:bg-gray-100 rounded-xl transition-colors"
+              className="p-3 hover:bg-orange-100 rounded-xl transition-colors shadow-md"
             >
-              <ChevronLeft className="w-5 h-5 text-gray-600" />
+              <ChevronLeft className="w-6 h-6 text-orange-600" />
             </button>
             
             <div className="text-center">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent mb-1">
                 {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
               </h3>
               <button
                 onClick={goToToday}
-                className="text-sm text-purple-600 hover:text-purple-700 font-medium mt-1 hover:underline"
+                className="text-sm text-orange-700 hover:text-orange-800 font-semibold hover:underline inline-flex items-center gap-1"
               >
-                Go to Today
+                🔆 Jump to Today
               </button>
             </div>
             
             <button
               onClick={() => navigateMonth('next')}
-              className="p-2 hover:bg-gray-100 rounded-xl transition-colors"
+              className="p-3 hover:bg-orange-100 rounded-xl transition-colors shadow-md"
             >
-              <ChevronRight className="w-5 h-5 text-gray-600" />
+              <ChevronRight className="w-6 h-6 text-orange-600" />
             </button>
           </div>
         </CardContent>
       </Card>
 
-      {/* Modern Calendar Grid */}
-      <Card className="overflow-hidden border-2 border-gray-100 shadow-lg">
+      {/* Festive Calendar Grid */}
+      <Card className="overflow-hidden border-2 border-orange-200 shadow-xl">
         <CardContent className="p-0">
-          <div className="grid grid-cols-7 gap-px bg-gray-200">
+          <div className="grid grid-cols-7 gap-px bg-orange-200">
             {/* Day Headers */}
             {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((day, index) => (
               <motion.div 
@@ -246,7 +246,7 @@ export default function EnhancedCalendarView() {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-gradient-to-b from-purple-50 to-pink-50 p-3 text-center text-sm font-bold text-purple-700"
+                className="bg-gradient-to-b from-orange-400 via-red-400 to-pink-400 p-4 text-center text-sm font-bold text-white shadow-sm"
               >
                 {day}
               </motion.div>
@@ -269,16 +269,16 @@ export default function EnhancedCalendarView() {
                   transition={{ delay: index * 0.01 }}
                   whileHover={{ scale: 1.02 }}
                   className={`bg-white p-2 min-h-[100px] cursor-pointer transition-all ${
-                    isTodayDate ? 'bg-gradient-to-br from-purple-50 to-pink-50 ring-2 ring-purple-400 ring-inset' : 'hover:bg-gray-50'
+                    isTodayDate ? 'bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50 ring-2 ring-orange-500 ring-inset shadow-lg' : 'hover:bg-orange-50'
                   }`}
                   onClick={() => dayFestivals.length > 0 && setSelectedFestival(dayFestivals[0])}
                 >
                   <div className={`text-sm font-semibold mb-2 flex items-center justify-between ${
-                    isTodayDate ? 'text-purple-700 font-bold' : 'text-gray-700'
+                    isTodayDate ? 'text-orange-700 font-bold text-lg' : 'text-gray-700'
                   }`}>
                     <span>{day}</span>
                     {isTodayDate && (
-                      <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-pulse"></span>
+                      <span className="text-base">🔆</span>
                     )}
                   </div>
                   
@@ -329,8 +329,8 @@ export default function EnhancedCalendarView() {
           className="space-y-4"
         >
           <div className="flex items-center justify-between mb-2">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              {monthFestivals.length} Festival{monthFestivals.length !== 1 ? 's' : ''} This Month
+            <h3 className="text-3xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent flex items-center gap-2">
+              ✨ {monthFestivals.length} Festival{monthFestivals.length !== 1 ? 's' : ''} This Month
             </h3>
           </div>
           
@@ -345,14 +345,14 @@ export default function EnhancedCalendarView() {
                 className="cursor-pointer group"
                 onClick={() => setSelectedFestival(festival)}
               >
-                <Card className="overflow-hidden border-2 border-gray-100 hover:border-purple-200 hover:shadow-2xl transition-all duration-300">
+                <Card className="overflow-hidden border-2 border-orange-200 hover:border-orange-400 hover:shadow-2xl transition-all duration-300 bg-gradient-to-br from-white to-orange-50">
                   <div className="relative h-48 overflow-hidden">
                     <img 
                       src={festival.heroImage} 
                       alt={festival.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-orange-900/70 via-black/20 to-transparent" />
                     <div className="absolute top-3 right-3 flex gap-2">
                       <motion.button
                         whileTap={{ scale: 0.9 }}
@@ -375,28 +375,28 @@ export default function EnhancedCalendarView() {
                       <h4 className="font-bold text-white text-xl drop-shadow-lg mb-1">
                         {festival.name}
                       </h4>
-                      <p className="text-sm text-white/90 drop-shadow font-marathi">
+                      <p className="text-sm text-yellow-100 drop-shadow font-marathi">
                         {festival.nameDevanagari}
                       </p>
                     </div>
                   </div>
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-3">
-                      <CalendarIcon className="w-4 h-4 text-purple-600" />
-                      <span className="text-sm text-purple-600 font-semibold">
+                      <CalendarIcon className="w-4 h-4 text-orange-600" />
+                      <span className="text-sm text-orange-700 font-bold">
                         {new Date(festival.date).toLocaleDateString('en-US', { 
                           month: 'long', 
                           day: 'numeric' 
                         })}
                       </span>
                     </div>
-                    <p className="text-sm text-gray-600 line-clamp-2 mb-4 leading-relaxed">{festival.tagline}</p>
+                    <p className="text-sm text-gray-700 line-clamp-2 mb-4 leading-relaxed">{festival.tagline}</p>
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className={`px-3 py-1.5 rounded-lg text-xs font-semibold border-2 ${getCategoryBadgeColor(festival.category)}`}>
+                      <span className={`px-3 py-1.5 rounded-lg text-xs font-bold border-2 ${getCategoryBadgeColor(festival.category)}`}>
                         {festival.category}
                       </span>
-                      <span className="text-xs text-gray-500 font-medium">
-                        {festival.recipes.length} recipes
+                      <span className="text-xs text-orange-600 font-semibold flex items-center gap-1">
+                        🍽️ {festival.recipes.length} recipes
                       </span>
                     </div>
                   </CardContent>
