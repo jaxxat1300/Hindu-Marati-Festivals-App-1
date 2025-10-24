@@ -195,14 +195,17 @@ export default function HomePage() {
             </motion.div>
             
             <div className="hidden md:flex items-center gap-3">
-              <motion.span
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl font-semibold shadow-lg"
-              >
-                🎓 College Club
-              </motion.span>
-              <div className="flex gap-2 text-2xl">
+              <div className="flex gap-3 text-3xl">
+                <motion.span 
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 5, -5, 0]
+                  }} 
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="filter drop-shadow-lg"
+                >
+                  🪔
+                </motion.span>
                 <motion.span animate={{ rotate: [0, 360] }} transition={{ duration: 4, repeat: Infinity }}>🌺</motion.span>
                 <motion.span animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }}>✨</motion.span>
               </div>
