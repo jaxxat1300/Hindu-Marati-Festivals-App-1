@@ -2221,5 +2221,784 @@
       "abhishekam": ["Milk (2 liters)", "Honey", "Yogurt", "Ghee", "Sugar", "Water"],
       "decoration": ["White cloth", "Copper kalash", "Mango leaves"]
     }
+  },
+  {
+    "id": "karwa-chauth",
+    "name": "Karwa Chauth",
+    "nameDevanagari": "करवा चौथ",
+    "date": "2025-10-23",
+    "category": "cultural",
+    "color": "#EC4899",
+    "tagline": "A day of love, devotion and the sacred bond between husband and wife",
+    "heroImage": "https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=800&q=80",
+    "overview": {
+      "brief": "Karwa Chauth is a one-day festival celebrated by married Hindu women who fast from sunrise to moonrise for the safety and longevity of their husbands.",
+      "history": "The festival has ancient origins with stories of queens like Veeravati and Karwa who saved their husbands through devotion. It's especially popular in North India.",
+      "significance": "The festival strengthens the marital bond and celebrates the love between husband and wife. The fast is believed to bring prosperity and longevity to the husband.",
+      "duration": "1 day",
+      "region": "North India (Punjab, Haryana, Rajasthan, UP)"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Sargi - Pre-dawn Meal",
+        "description": "Wake up before sunrise and eat the Sargi prepared by mother-in-law, containing fruits, sweets, and traditional foods.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Fast Throughout the Day",
+        "description": "Observe a strict fast without food or water from sunrise until moonrise. Dress in traditional attire.",
+        "timeNeeded": "All day",
+        "difficulty": "Hard"
+      },
+      {
+        "step": 3,
+        "title": "Evening Puja",
+        "description": "In the evening, listen to the Karwa Chauth story (katha) and perform puja with other married women.",
+        "timeNeeded": "1 hour",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Moonrise Ritual",
+        "description": "After moonrise, view the moon through a sieve, offer water, then look at your husband through the sieve and break fast with water from his hands.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "sargi-thali",
+        "name": "Sargi Thali",
+        "nameDevanagari": "सरगी थाली",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Traditional pre-dawn meal with fruits, sweets and savory items",
+        "difficulty": "Easy",
+        "prepTime": "30 min",
+        "cookTime": "0 min",
+        "servings": "1 serving",
+        "ingredients": [
+          "Assorted fruits (apple, banana, pomegranate)",
+          "Dry fruits and nuts",
+          "Mathri or namakpara",
+          "Sweet seviyan",
+          "Coconut",
+          "Milk",
+          "Sweets (optional)"
+        ],
+        "instructions": [
+          "Arrange all items beautifully on a thali",
+          "Include variety for nutrition and energy",
+          "Add a glass of water or milk",
+          "Cover and keep ready for pre-dawn"
+        ],
+        "tips": [
+          "Prepare the night before",
+          "Include hydrating fruits",
+          "Add protein-rich items for energy"
+        ]
+      },
+      {
+        "id": "phirni",
+        "name": "Phirni",
+        "nameDevanagari": "फिरनी",
+        "image": "https://images.unsplash.com/photo-1589217157232-464b505b197f?w=400&q=80",
+        "description": "Creamy rice pudding served in earthen pots",
+        "difficulty": "Medium",
+        "prepTime": "15 min",
+        "cookTime": "45 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "1/2 cup basmati rice (soaked)",
+          "1 liter full-fat milk",
+          "1/2 cup sugar",
+          "Few saffron strands",
+          "1/4 tsp cardamom powder",
+          "2 tbsp chopped pistachios",
+          "2 tbsp chopped almonds"
+        ],
+        "instructions": [
+          "Drain and grind soaked rice to coarse paste",
+          "Boil milk in heavy-bottomed pan",
+          "Add rice paste and cook stirring continuously",
+          "Cook until thick and creamy (30-40 minutes)",
+          "Add sugar, saffron and cardamom",
+          "Cool and pour into earthen pots",
+          "Garnish with nuts and refrigerate"
+        ],
+        "tips": [
+          "Grind rice coarsely for texture",
+          "Stir constantly to prevent burning",
+          "Serve chilled for best taste"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Mehndi",
+        "title": "Bridal Mehndi Design",
+        "description": "Traditional henna designs applied on hands and feet, an essential part of Karwa Chauth celebration.",
+        "materials": [
+          "Mehndi cone",
+          "Lemon-sugar solution",
+          "Cotton balls",
+          "Tissue paper"
+        ],
+        "difficulty": "Medium",
+        "timeNeeded": "2 hours",
+        "steps": [
+          "Clean hands thoroughly",
+          "Apply mehndi in traditional patterns",
+          "Let dry for 4-6 hours",
+          "Apply lemon-sugar solution",
+          "Scrape off dried mehndi",
+          "Avoid water for deep color"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Book a professional mehndi artist",
+          "Apply a day before for deep color",
+          "Use natural henna for safe application"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Karwa (earthen pot)", "Sieve", "Diya", "Flowers", "Incense"],
+      "sargi": ["Fruits", "Dry fruits", "Sweets", "Milk", "Coconut"],
+      "beauty": ["Mehndi cone", "Bangles", "Bindi", "Traditional outfit"],
+      "food": ["Rice", "Milk", "Sugar", "Nuts for breaking fast"]
+    }
+  },
+  {
+    "id": "bhai-dooj",
+    "name": "Bhai Dooj",
+    "nameDevanagari": "भाई दूज",
+    "date": "2025-11-03",
+    "category": "cultural",
+    "color": "#F59E0B",
+    "tagline": "Celebrating the eternal bond between brothers and sisters",
+    "heroImage": "https://images.unsplash.com/photo-1565034946487-077786996e27?w=800&q=80",
+    "overview": {
+      "brief": "Bhai Dooj celebrates the love between brothers and sisters. Sisters perform tilak ceremony for brothers and pray for their long life and prosperity.",
+      "history": "According to legend, Yama (god of death) visited his sister Yamuna on this day. She welcomed him with tilak and aarti, and Yama blessed her, declaring that any brother visiting his sister on this day would be blessed.",
+      "significance": "The festival strengthens sibling bonds and celebrates family ties. It's similar to Raksha Bandhan but with the sister performing rituals for the brother.",
+      "duration": "1 day",
+      "region": "Pan-India"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Prepare the Tilak Thali",
+        "description": "Arrange a decorative plate with kumkum, rice, sweets, flowers, diya and coconut.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Tilak Ceremony",
+        "description": "Apply tilak on brother's forehead, perform aarti with diya, and offer sweets while praying for his wellbeing.",
+        "timeNeeded": "20 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 3,
+        "title": "Exchange Gifts",
+        "description": "Brothers give gifts to sisters as tokens of love and affection.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Festive Meal",
+        "description": "Share a special meal together with family, including traditional sweets and dishes.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "kheer",
+        "name": "Kheer",
+        "nameDevanagari": "खीर",
+        "image": "https://images.unsplash.com/photo-1589217157232-464b505b197f?w=400&q=80",
+        "description": "Traditional rice pudding, a must-have for Bhai Dooj",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "40 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "1/2 cup basmati rice",
+          "1 liter full-fat milk",
+          "1/2 cup sugar",
+          "1/4 tsp cardamom powder",
+          "Few saffron strands",
+          "2 tbsp chopped nuts",
+          "1 tbsp raisins"
+        ],
+        "instructions": [
+          "Wash and soak rice for 15 minutes",
+          "Boil milk in heavy-bottomed pan",
+          "Add drained rice and simmer",
+          "Cook until rice is soft (30 minutes)",
+          "Add sugar and cardamom",
+          "Add saffron and nuts",
+          "Serve warm or chilled"
+        ],
+        "tips": [
+          "Stir occasionally to prevent sticking",
+          "Adjust sugar to taste",
+          "Garnish with silver vark for special occasions"
+        ]
+      },
+      {
+        "id": "namak-pare",
+        "name": "Namak Pare",
+        "nameDevanagari": "नमक पारे",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Crispy savory snack perfect for the occasion",
+        "difficulty": "Medium",
+        "prepTime": "20 min",
+        "cookTime": "30 min",
+        "servings": "30 pieces",
+        "ingredients": [
+          "2 cups all-purpose flour",
+          "1/4 cup ghee",
+          "1 tsp carom seeds",
+          "1 tsp salt",
+          "Water as needed",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Mix flour, ghee, carom seeds and salt",
+          "Add water gradually to make stiff dough",
+          "Rest dough for 15 minutes",
+          "Roll out and cut into diamond shapes",
+          "Heat oil for deep frying",
+          "Fry on medium heat until golden",
+          "Cool and store in airtight container"
+        ],
+        "tips": [
+          "Dough should be firm, not soft",
+          "Fry on medium heat for crispiness",
+          "Can be stored for 2 weeks"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Tilak Thali",
+        "title": "Decorative Tilak Plate",
+        "description": "Beautiful arrangement of all items needed for the tilak ceremony.",
+        "materials": [
+          "Steel or brass thali",
+          "Kumkum and haldi",
+          "Rice grains",
+          "Small diya",
+          "Flowers",
+          "Sweets",
+          "Coconut",
+          "Decorative cloth"
+        ],
+        "difficulty": "Easy",
+        "timeNeeded": "20 minutes",
+        "steps": [
+          "Cover thali with decorative cloth",
+          "Place diya in center",
+          "Arrange kumkum and rice in small bowls",
+          "Add fresh flowers",
+          "Place sweets on the side",
+          "Add coconut and any other offerings"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1597433336446-57c5c2ceb42c?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Use a ready-made decorative thali",
+          "Prepare in the morning",
+          "Keep it simple but elegant"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Kumkum", "Haldi", "Rice", "Diya", "Flowers", "Coconut"],
+      "sweets": ["Assorted sweets", "Dry fruits", "Chocolates"],
+      "gifts": ["Gift items for brother/sister", "Gift wrapping"],
+      "food": ["Rice for kheer", "Milk", "Nuts", "Ingredients for special meal"]
+    }
+  },
+  {
+    "id": "lohri",
+    "name": "Lohri",
+    "nameDevanagari": "लोहड़ी",
+    "date": "2025-01-13",
+    "category": "harvest",
+    "color": "#F97316",
+    "tagline": "Celebrating the harvest with bonfire, folk songs and traditional joy",
+    "heroImage": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80",
+    "overview": {
+      "brief": "Lohri is a popular winter harvest festival celebrated with great enthusiasm in Punjab and North India, marking the end of winter solstice.",
+      "history": "The festival is associated with the legend of Dulla Bhatti, a hero who rescued Hindu girls from being forcibly taken to slave market of the Middle East. The bonfire is lit to bid farewell to winter.",
+      "significance": "Lohri celebrates the harvest of rabi crops, especially sugarcane. It's also significant for newly married couples and newborn babies.",
+      "duration": "1 evening",
+      "region": "Punjab, Haryana, Himachal Pradesh"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Build the Bonfire",
+        "description": "In the evening, build a large bonfire in an open area with wood, cow dung cakes, and other combustible materials.",
+        "timeNeeded": "1 hour",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 2,
+        "title": "Gather and Sing",
+        "description": "Family and friends gather around the fire, singing traditional folk songs and dancing to dhol beats.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 3,
+        "title": "Offer to Fire",
+        "description": "Throw puffed rice, popcorn, rewri, gajak and peanuts into the fire while walking around it.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Feast and Celebrate",
+        "description": "Share traditional foods like sarson da saag, makki di roti, til and gajak with everyone present.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "til-gajak",
+        "name": "Til Gajak",
+        "nameDevanagari": "तिल गजक",
+        "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&q=80",
+        "description": "Crunchy sesame brittle, a Lohri special",
+        "difficulty": "Medium",
+        "prepTime": "10 min",
+        "cookTime": "20 min",
+        "servings": "20 pieces",
+        "ingredients": [
+          "2 cups white sesame seeds",
+          "1.5 cups jaggery (grated)",
+          "2 tbsp ghee",
+          "1/4 tsp cardamom powder",
+          "Pinch of salt"
+        ],
+        "instructions": [
+          "Dry roast sesame seeds until golden",
+          "In another pan, melt jaggery with little water",
+          "Cook until it reaches hard ball consistency",
+          "Add roasted sesame and cardamom",
+          "Mix quickly and spread on greased surface",
+          "Roll with rolling pin while still warm",
+          "Cut into squares and let cool"
+        ],
+        "tips": [
+          "Test jaggery in cold water for right consistency",
+          "Work quickly as it hardens fast",
+          "Store in airtight container"
+        ]
+      },
+      {
+        "id": "makki-roti",
+        "name": "Makki Di Roti with Sarson Da Saag",
+        "nameDevanagari": "मक्की दी रोटी सरसों दा साग",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Traditional Punjabi flatbread with mustard greens",
+        "difficulty": "Medium",
+        "prepTime": "30 min",
+        "cookTime": "45 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "2 cups cornmeal",
+          "Warm water as needed",
+          "Salt to taste",
+          "1 kg mustard greens",
+          "1 cup spinach",
+          "2 tbsp cornmeal for saag",
+          "Ginger-garlic-green chili paste",
+          "Butter and ghee for serving"
+        ],
+        "instructions": [
+          "For roti: Mix cornmeal with salt and warm water",
+          "Knead into soft dough",
+          "Make balls and flatten between palms",
+          "Cook on hot tawa with ghee",
+          "For saag: Boil greens until tender",
+          "Blend coarsely and cook with spices",
+          "Add cornmeal for consistency",
+          "Serve hot with dollop of butter"
+        ],
+        "tips": [
+          "Use warm water for softer rotis",
+          "Don't over-knead cornmeal dough",
+          "Saag tastes better the next day"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Bonfire Setup",
+        "title": "Traditional Lohri Bonfire",
+        "description": "Create a safe and festive bonfire setup for the celebration.",
+        "materials": [
+          "Firewood logs",
+          "Cow dung cakes (optional)",
+          "Hay or dry grass",
+          "Safe open space",
+          "Sand or water for safety"
+        ],
+        "difficulty": "Medium",
+        "timeNeeded": "2 hours",
+        "steps": [
+          "Choose open, safe area away from buildings",
+          "Clear the ground of any flammable materials",
+          "Stack firewood in teepee formation",
+          "Add hay and cow dung cakes",
+          "Keep safety equipment nearby",
+          "Light at sunset",
+          "Maintain safe distance while celebrating"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Get local permissions if required",
+          "Have adults supervise the fire",
+          "Keep children at safe distance",
+          "Have water ready for emergencies"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "bonfire": ["Firewood", "Cow dung cakes", "Hay"],
+      "offerings": ["Puffed rice", "Popcorn", "Peanuts", "Rewri", "Gajak"],
+      "food": ["Cornmeal", "Mustard greens", "Jaggery", "Sesame seeds", "Butter"],
+      "music": ["Dhol (if possible)", "Music system for folk songs"]
+    }
+  },
+  {
+    "id": "vasant-panchami",
+    "name": "Vasant Panchami",
+    "nameDevanagari": "वसंत पंचमी",
+    "date": "2025-02-03",
+    "category": "religious",
+    "color": "#EAB308",
+    "tagline": "Welcoming spring and worshipping Goddess Saraswati",
+    "heroImage": "https://images.unsplash.com/photo-1587377838374-391b32683cb9?w=800&q=80",
+    "overview": {
+      "brief": "Vasant Panchami marks the beginning of spring and is dedicated to Goddess Saraswati, the deity of knowledge, music and arts.",
+      "history": "The festival celebrates the day when Goddess Saraswati was born. It's also the day when Lord Brahma created the universe. Yellow color dominates the celebration as it represents mustard fields in bloom.",
+      "significance": "It's an auspicious day to begin learning, especially for children. Students worship books and musical instruments seeking Saraswati's blessings for knowledge and wisdom.",
+      "duration": "1 day",
+      "region": "Pan-India (especially North and East)"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Wear Yellow",
+        "description": "Dress in yellow clothes symbolizing the vibrancy of spring and mustard flowers in bloom.",
+        "timeNeeded": "15 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Saraswati Puja",
+        "description": "Worship Goddess Saraswati with yellow flowers, fruits, and sweets. Place books and musical instruments near the deity for blessings.",
+        "timeNeeded": "1 hour",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 3,
+        "title": "Children's Learning Initiation",
+        "description": "This is an auspicious day for children to begin their education. Perform Akshar Abhyasam (first writing ceremony) for young children.",
+        "timeNeeded": "30 minutes",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 4,
+        "title": "Fly Kites",
+        "description": "In many regions, people fly kites to celebrate the arrival of spring.",
+        "timeNeeded": "2 hours",
+        "difficulty": "Easy"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "kesari-bhaat",
+        "name": "Kesari Bhaat (Sweet Saffron Rice)",
+        "nameDevanagari": "केसरी भात",
+        "image": "https://images.unsplash.com/photo-1589217157232-464b505b197f?w=400&q=80",
+        "description": "Yellow sweet rice offered to Goddess Saraswati",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "25 min",
+        "servings": "6 servings",
+        "ingredients": [
+          "1 cup basmati rice",
+          "2 cups water",
+          "1/2 cup sugar",
+          "Few saffron strands",
+          "2 tbsp ghee",
+          "1/4 tsp cardamom powder",
+          "2 tbsp chopped cashews and raisins"
+        ],
+        "instructions": [
+          "Cook rice with saffron and yellow food color",
+          "Once cooked, add sugar and mix",
+          "Heat ghee and fry nuts and raisins",
+          "Add to rice along with cardamom",
+          "Mix gently and serve as prasad"
+        ],
+        "tips": [
+          "Use good quality saffron for color",
+          "Don't overcook rice",
+          "Serve warm as offering"
+        ]
+      },
+      {
+        "id": "boondi-ladoo",
+        "name": "Boondi Ladoo",
+        "nameDevanagari": "बूंदी लड्डू",
+        "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&q=80",
+        "description": "Yellow sweet balls perfect for Vasant Panchami",
+        "difficulty": "Medium",
+        "prepTime": "20 min",
+        "cookTime": "40 min",
+        "servings": "25 ladoos",
+        "ingredients": [
+          "2 cups gram flour (besan)",
+          "1.5 cups sugar",
+          "1 cup water",
+          "Yellow food color",
+          "1/4 tsp cardamom powder",
+          "2 tbsp chopped nuts",
+          "Ghee for frying"
+        ],
+        "instructions": [
+          "Make sugar syrup of one string consistency",
+          "Prepare batter with besan, water and color",
+          "Heat ghee and pour batter through perforated spoon",
+          "Fry boondi until crisp",
+          "Mix in warm sugar syrup",
+          "Add cardamom and nuts",
+          "Shape into ladoos while warm"
+        ],
+        "tips": [
+          "Batter consistency is key for round boondis",
+          "Work quickly while mixture is warm",
+          "Store in airtight container"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Saraswati Altar",
+        "title": "Saraswati Puja Setup",
+        "description": "Create a beautiful yellow-themed altar for Goddess Saraswati with books and instruments.",
+        "materials": [
+          "Saraswati idol or picture",
+          "Yellow flowers (marigolds)",
+          "Yellow cloth",
+          "Books and notebooks",
+          "Musical instruments",
+          "Yellow fruits",
+          "Rangoli colors"
+        ],
+        "difficulty": "Easy",
+        "timeNeeded": "1 hour",
+        "steps": [
+          "Clean the puja area",
+          "Place yellow cloth as base",
+          "Position Saraswati idol/picture",
+          "Arrange books and instruments nearby",
+          "Decorate with yellow flowers",
+          "Create yellow rangoli at base",
+          "Light diyas and incense"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1587377838374-391b32683cb9?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Yellow theme is essential",
+          "Include educational items",
+          "Simple and devotional setup works best"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Saraswati idol/picture", "Yellow flowers", "Yellow cloth", "Incense", "Diyas"],
+      "clothes": ["Yellow outfit for family"],
+      "food": ["Rice", "Saffron", "Sugar", "Gram flour", "Ghee", "Dry fruits"],
+      "others": ["Kites and string (if flying kites)", "Yellow decorations"]
+    }
+  },
+  {
+    "id": "chhath-puja",
+    "name": "Chhath Puja",
+    "nameDevanagari": "छठ पूजा",
+    "date": "2025-10-28",
+    "category": "religious",
+    "color": "#FB923C",
+    "tagline": "Worshipping the Sun God with devotion and purity",
+    "heroImage": "https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=800&q=80",
+    "overview": {
+      "brief": "Chhath Puja is an ancient Hindu festival dedicated to the Sun God (Surya) and Chhathi Maiya. It's primarily celebrated in Bihar, Jharkhand and Eastern Uttar Pradesh.",
+      "history": "The festival is believed to have been started by Karna, son of Surya, in the Mahabharata era. Draupadi also performed this puja. It's one of the most rigorous and eco-friendly festivals.",
+      "significance": "Devotees offer prayers to the setting and rising sun, thanking the Sun God for sustaining life on earth. The festival promotes purity, devotion and environmental consciousness.",
+      "duration": "4 days",
+      "region": "Bihar, Jharkhand, Eastern UP, Nepal"
+    },
+    "howToCelebrate": [
+      {
+        "step": 1,
+        "title": "Day 1: Nahay Khay",
+        "description": "Take a holy bath in river or clean water body. Prepare and eat simple vegetarian food. Begin the purification process.",
+        "timeNeeded": "All day",
+        "difficulty": "Easy"
+      },
+      {
+        "step": 2,
+        "title": "Day 2: Kharna",
+        "description": "Observe nirjala fast (without water) throughout the day. Break fast after sunset with kheer and roti. This begins the main fast.",
+        "timeNeeded": "All day",
+        "difficulty": "Hard"
+      },
+      {
+        "step": 3,
+        "title": "Day 3: Sandhya Arghya (Evening Offerings)",
+        "description": "Prepare thekua and fruits in bamboo baskets. Go to riverbank and offer arghya to setting sun while standing in water.",
+        "timeNeeded": "3-4 hours",
+        "difficulty": "Medium"
+      },
+      {
+        "step": 4,
+        "title": "Day 4: Usha Arghya (Morning Offerings)",
+        "description": "Return to riverbank before sunrise. Offer arghya to rising sun. Break the 36-hour fast with prasad.",
+        "timeNeeded": "2-3 hours",
+        "difficulty": "Hard"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "thekua",
+        "name": "Thekua",
+        "nameDevanagari": "ठेकुआ",
+        "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80",
+        "description": "Traditional sweet fried cookies, main offering of Chhath Puja",
+        "difficulty": "Medium",
+        "prepTime": "30 min",
+        "cookTime": "45 min",
+        "servings": "40 pieces",
+        "ingredients": [
+          "3 cups whole wheat flour",
+          "1 cup jaggery (grated)",
+          "1/2 cup ghee",
+          "1/2 cup milk",
+          "1 tbsp fennel seeds",
+          "1/2 cup grated coconut",
+          "Oil for deep frying"
+        ],
+        "instructions": [
+          "Melt jaggery with little water to syrup",
+          "Mix flour, ghee and fennel seeds",
+          "Add jaggery syrup and coconut",
+          "Add milk and knead to stiff dough",
+          "Make small balls and flatten with design",
+          "Deep fry on low heat until golden",
+          "Drain and cool completely"
+        ],
+        "tips": [
+          "Fry on low heat for even cooking",
+          "Traditional molds create beautiful patterns",
+          "Can be stored for weeks"
+        ]
+      },
+      {
+        "id": "rice-kheer",
+        "name": "Rice Kheer",
+        "nameDevanagari": "चावल की खीर",
+        "image": "https://images.unsplash.com/photo-1589217157232-464b505b197f?w=400&q=80",
+        "description": "Pure rice pudding for Kharna day",
+        "difficulty": "Easy",
+        "prepTime": "10 min",
+        "cookTime": "45 min",
+        "servings": "8 servings",
+        "ingredients": [
+          "1/2 cup rice",
+          "1.5 liters milk",
+          "3/4 cup jaggery",
+          "1/4 tsp cardamom powder",
+          "Few chopped nuts"
+        ],
+        "instructions": [
+          "Wash and soak rice for 15 minutes",
+          "Boil milk in heavy pot",
+          "Add rice and cook until soft",
+          "Add jaggery and mix well",
+          "Add cardamom powder",
+          "Garnish with nuts",
+          "Serve after offering to God"
+        ],
+        "tips": [
+          "Use pure ingredients only",
+          "No salt or sugar, only jaggery",
+          "Prepare in clean, pure environment"
+        ]
+      }
+    ],
+    "decorations": [
+      {
+        "type": "Soop and Offerings",
+        "title": "Bamboo Basket Arrangement",
+        "description": "Traditional bamboo basket (soop) beautifully arranged with offerings for the Sun God.",
+        "materials": [
+          "Bamboo basket (soop)",
+          "Fresh fruits (banana, coconut, apple)",
+          "Thekua",
+          "Sugarcane",
+          "Ginger",
+          "Turmeric",
+          "Diya",
+          "New clothes for offering"
+        ],
+        "difficulty": "Medium",
+        "timeNeeded": "1 hour",
+        "steps": [
+          "Clean bamboo basket thoroughly",
+          "Line with clean cloth",
+          "Arrange fruits aesthetically",
+          "Place thekua in center",
+          "Add sugarcane stalks",
+          "Include turmeric and ginger",
+          "Place diya for carrying to ghat",
+          "Cover with clean cloth when moving"
+        ],
+        "images": [
+          "https://images.unsplash.com/photo-1509023464722-18d996393ca8?w=400&q=80"
+        ],
+        "beginnerTips": [
+          "Use natural, eco-friendly materials only",
+          "Everything should be fresh and pure",
+          "Prepare multiple soops for family members"
+        ]
+      }
+    ],
+    "shoppingList": {
+      "puja": ["Bamboo baskets (2)", "Diyas", "Incense", "Coconut", "Sugarcane"],
+      "food": ["Wheat flour", "Jaggery", "Rice", "Milk", "Ghee", "Fruits"],
+      "offerings": ["Bananas", "Apples", "Ginger", "Turmeric", "Seasonal fruits"],
+      "essentials": ["Clean clothes", "Water pot for arghya"]
+    }
   }
 ]
