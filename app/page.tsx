@@ -78,43 +78,36 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen festival-gradient app-container">
-      {/* Header with Vibrant Indian Charm */}
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50 app-container">
+      {/* Modern Clean Header */}
       <motion.header 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="app-header sticky top-0 z-50 festival-decoration festival-lights"
+        className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-sm"
       >
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center justify-center">
-            <div className="text-center">
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                className="flex items-center justify-center gap-3 mb-2"
-              >
-                <motion.span 
-                  className="text-3xl festival-icon"
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  🪔
-                </motion.span>
-                <h1 className="text-2xl font-bold text-white font-marathi drop-shadow-lg">
-                  Hindu Marathi Festivals
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <motion.div
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+              className="flex items-center gap-3"
+            >
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-xl">🪔</span>
+              </div>
+              <div>
+                <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  Hindu Cultural Society
                 </h1>
-                <motion.span 
-                  className="text-3xl festival-icon"
-                  animate={{ rotate: [0, -10, 10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  🕉️
-                </motion.span>
-              </motion.div>
-              <p className="text-sm text-white/90 drop-shadow">
-                Your Digital Festival Companion
-              </p>
+                <p className="text-xs text-gray-500">Festival Calendar</p>
+              </div>
+            </motion.div>
+            
+            <div className="hidden md:flex items-center gap-2 text-sm">
+              <span className="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-pink-50 text-purple-700 rounded-lg font-medium">
+                🎓 College Club
+              </span>
             </div>
           </div>
         </div>
@@ -136,14 +129,14 @@ export default function HomePage() {
         </AnimatePresence>
       </main>
 
-      {/* Bottom Navigation with Enhanced Design */}
+      {/* Modern Bottom Navigation */}
       <motion.nav 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="app-nav fixed bottom-0 left-0 right-0 z-50"
+        className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-2xl"
       >
-        <div className="container mx-auto px-4">
-          <div className="flex justify-around py-2">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex justify-around items-center h-16">
             {tabs.map((tab) => {
               const Icon = tab.icon
               const isActive = activeTab === tab.id
@@ -154,53 +147,31 @@ export default function HomePage() {
                   onClick={() => setActiveTab(tab.id)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`touch-button flex flex-col items-center py-2 px-3 rounded-xl transition-all duration-300 ${
-                    isActive 
-                      ? `${tab.color} bg-white shadow-lg border border-saffron-200` 
-                      : 'text-gray-500 hover:text-saffron-500'
-                  }`}
+                  className="relative flex flex-col items-center justify-center py-2 px-4 rounded-2xl transition-all duration-200"
                 >
-                  <div className="relative">
-                    <Icon className={`w-5 h-5 mb-1 transition-all duration-200 ${
-                      isActive ? 'scale-110' : ''
+                  {isActive && (
+                    <motion.div
+                      layoutId="activeTab"
+                      className="absolute inset-0 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl"
+                      transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                    />
+                  )}
+                  <div className="relative z-10">
+                    <Icon className={`w-6 h-6 mb-1 transition-colors ${
+                      isActive ? 'text-purple-600' : 'text-gray-400'
                     }`} />
-                    {isActive && (
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        className="absolute -top-1 -right-1 w-2 h-2 bg-saffron-500 rounded-full"
-                      />
-                    )}
+                    <span className={`text-xs font-medium ${
+                      isActive ? 'text-purple-600' : 'text-gray-500'
+                    }`}>
+                      {tab.label}
+                    </span>
                   </div>
-                  <span className={`text-xs font-medium transition-all duration-200 ${
-                    isActive ? 'text-saffron-700' : ''
-                  }`}>
-                    {tab.label}
-                  </span>
                 </motion.button>
               )
             })}
           </div>
         </div>
       </motion.nav>
-
-      {/* Floating Action Button for Quick Access */}
-      <motion.button
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1 }}
-        whileHover={{ scale: 1.1, rotate: 360 }}
-        whileTap={{ scale: 0.9 }}
-        className="fixed bottom-20 right-4 w-14 h-14 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full shadow-xl diya-glow flex items-center justify-center z-40 fireworks"
-        onClick={() => setActiveTab('calendar')}
-      >
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-        >
-          <Sparkles className="w-7 h-7" />
-        </motion.div>
-      </motion.button>
     </div>
   )
 }

@@ -44,41 +44,49 @@
 }
 
 @layer components {
-  /* Vibrant Indian Festival Gradients */
+  /* Modern Clean Gradients */
   .festival-gradient {
-    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 25%, #48dbfb 50%, #ff9ff3 75%, #54a0ff 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
   
   .spiritual-gradient {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 25%, #fecfef 50%, #ffecd2 100%);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   }
   
   .marathi-gradient {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 25%, #ff9ff3 50%, #f368e0 100%);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   }
   
   .hindu-gradient {
-    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 25%, #00b894 50%, #00cec9 100%);
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
   }
   
   .diwali-gradient {
-    background: linear-gradient(135deg, #ffd700 0%, #ff6b35 25%, #f7931e 50%, #ffd700 100%);
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
   }
   
   .holi-gradient {
-    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 25%, #45b7d1 50%, #96ceb4 75%, #feca57 100%);
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
   }
   
   .ganesh-gradient {
-    background: linear-gradient(135deg, #feca57 0%, #ff9ff3 25%, #54a0ff 50%, #5f27cd 100%);
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   }
   
   .navratri-gradient {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 25%, #feca57 50%, #48dbfb 75%, #ff9ff3 100%);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
   }
   
   .minimalist-gradient {
-    background: linear-gradient(180deg, #ffffff 0%, #fef7ed 50%, #fffbeb 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  }
+  
+  .modern-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  
+  .clean-bg {
+    background: #fafbfc;
   }
   
   /* Interactive Elements */
