@@ -101,7 +101,7 @@ export default function HomePage() {
             transition={{ delay: 0.3 }}
             className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent"
           >
-            Hindu Cultural Society
+            India Festival Calendar
           </motion.h1>
 
           <motion.p
@@ -110,7 +110,7 @@ export default function HomePage() {
             transition={{ delay: 0.5 }}
             className="text-xl text-orange-700 font-marathi mb-8"
           >
-            त्योहारांचे दर्शन
+            हिंदी और मराठी त्योहार
           </motion.p>
 
           {/* Animated Dots */}
@@ -188,9 +188,9 @@ export default function HomePage() {
               </motion.div>
               <div>
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
-                  Hindu Cultural Society
+                  India Festival Calendar
                 </h1>
-                <p className="text-sm text-orange-700 font-marathi">त्योहार कॅलेंडर • Festival Calendar</p>
+                <p className="text-sm text-orange-700 font-marathi">हिंदी और मराठी त्योहार • Hindi and Marathi</p>
               </div>
             </motion.div>
             

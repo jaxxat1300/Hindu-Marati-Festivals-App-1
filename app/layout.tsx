@@ -5,9 +5,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Hindu Marathi Festivals',
-  description: 'A beautiful digital companion for Hindu and Marathi festivals',
-  keywords: 'Hindu festivals, Marathi festivals, Indian culture, spirituality, calendar',
+  title: 'India Festival Calendar - Hindi and Marathi Festivals',
+  description: 'Comprehensive guide to Hindi and Marathi festivals with accurate dates from Drik Panchang, recipes, decorations, and celebration guides',
+  keywords: 'India festivals, Hindi festivals, Marathi festivals, Hindu calendar, Drik Panchang, Indian culture, spirituality, calendar',
 }
 
 export default function RootLayout({

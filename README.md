@@ -1,6 +1,6 @@
-# 🪔 Hindu Marathi Festivals App
+# 🪔 India Festival Calendar (Hindi and Marathi)
 
-A modern, mobile-first Indian festival calendar application showcasing the beauty and richness of Hindu and Marathi festivals. Built with React, Next.js, and Tailwind CSS, featuring a contemporary Indian design aesthetic that celebrates our cultural heritage.
+A modern, mobile-first Indian festival calendar application showcasing the beauty and richness of Hindi and Marathi festivals. Built with React, Next.js, and Tailwind CSS, featuring authentic festival dates from [Drik Panchang](https://www.drikpanchang.com/) and a contemporary Indian design aesthetic that celebrates our cultural heritage.
 
 ![Festival App Banner](https://images.unsplash.com/photo-1604964432806-254d07c11f32?w=1200&h=300&fit=crop)
 
