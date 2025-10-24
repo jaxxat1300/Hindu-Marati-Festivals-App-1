@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import EnhancedCalendarView from '@/components/EnhancedCalendarView'
 import FavoritesView from '@/components/FavoritesView'
+import HindiFestivals from '@/components/HindiFestivals'
 import MarathiFestivals from '@/components/MarathiFestivals'
 import HinduFestivals from '@/components/HinduFestivals'
 import Profile from '@/components/Profile'
@@ -21,6 +22,7 @@ export default function HomePage() {
   const tabs = [
     { id: 'calendar', label: 'Calendar', icon: Calendar, color: 'text-saffron-600' },
     { id: 'favorites', label: 'Favorites', icon: Heart, color: 'text-rose-600' },
+    { id: 'hindi', label: 'Hindi', icon: Sparkles, color: 'text-orange-600' },
     { id: 'marathi', label: 'Marathi', icon: Home, color: 'text-teal-600' },
     { id: 'profile', label: 'Profile', icon: User, color: 'text-gold-600' },
   ]
@@ -41,6 +43,8 @@ export default function HomePage() {
         return <EnhancedCalendarView />
       case 'favorites':
         return <FavoritesView favorites={favorites} onToggleFavorite={toggleFavorite} />
+      case 'hindi':
+        return <HindiFestivals />
       case 'marathi':
         return <MarathiFestivals />
       case 'profile':
@@ -53,8 +57,9 @@ export default function HomePage() {
   const getTabIcon = (tabId: string) => {
     switch (tabId) {
       case 'calendar': return '📅'
+      case 'favorites': return '❤️'
+      case 'hindi': return '🕉️'
       case 'marathi': return '🪔'
-      case 'hindu': return '🕉️'
       case 'profile': return '👤'
       default: return '📅'
     }
