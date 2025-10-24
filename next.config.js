@@ -5,7 +5,9 @@ const nextConfig = {
     unoptimized: true
   },
   output: 'export',
-  trailingSlash: true
+  trailingSlash: true,
+  basePath: '/Hindu-Marati-Festivals-App-1',
+  assetPrefix: '/Hindu-Marati-Festivals-App-1'
 }
 
 module.exports = nextConfig
